@@ -53,20 +53,6 @@ export default function IndexPage() {
 }
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'Inter';
-    font-style:  normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("assets/Inter-Regular.woff2?v=3.11") format("woff2");
-  }
-  @font-face {
-    font-family: 'Inter';
-    font-style:  normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url("assets/Inter-Medium.woff2?v=3.11") format("woff2");
-  }
   * {
     box-sizing: border-box;
   }

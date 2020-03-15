@@ -17,7 +17,7 @@ export default function IndexPage() {
         <ContentBlock
           title="react-native-awesome-select"
           description="A multiselect component with zero dependencies."
-          image="/static/4_.png"
+          image="/4_.png"
           tags={[
             {
               name: "github",
@@ -34,7 +34,7 @@ export default function IndexPage() {
         <ContentBlock
           title="eksi-chrome-ext"
           description="A Chrome extension that shows a random post of eksisözlük on a new tab using an API built with Node.js. Used the web scraping technique to retrieve data from the website."
-          image="/static/2.jpg"
+          image="/2.jpg"
           tags={[
             {
               name: "github (api)",

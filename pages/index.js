@@ -17,7 +17,7 @@ export default function IndexPage() {
         <ContentBlock
           title="react-native-awesome-select"
           description="A multiselect component with zero dependencies."
-          image="/4_.png"
+          image="/1.png"
           tags={[
             {
               name: "github",

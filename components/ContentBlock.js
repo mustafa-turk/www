@@ -11,7 +11,7 @@ export default function ContentBlock({ title, description, image, tags }) {
           return (
             <Tag href={tag.url} target="_blank" rel="noopener" key={key}>
               {tag.name}
-              <img src="../static/external-link.svg" alt="external-link-icon" />
+              <img src="/external-link.svg" alt="external-link-icon" />
             </Tag>
           );
         }) }

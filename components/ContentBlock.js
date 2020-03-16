@@ -39,19 +39,17 @@ const Tags = styled.div`
 const Tag = styled.a`
   display: flex;
   align-items: center;
-  background: #FAFBFC;
-  color: #2879F4;
-  padding: 8px 10px;
-  border-radius: 7px;
+  color: #2879f4;
   font-size: 14px;
-  margin-right: 10px;
-  transition: background 150ms ease-in 0s;
+  margin-right: 20px;
+  border-bottom: 1px solid transparent;
+  transition: border 0.2s ease;
   &:hover {
-    background: #edeff0;
+    border-bottom: 1px solid #2879f4;
   }
   img {
     width: 15px;
-    margin-left: 5px;
+    margin-left: 3px;
     pointer-events: none;
   }
-`
+`;

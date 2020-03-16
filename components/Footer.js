@@ -4,9 +4,7 @@ export default function Footer() {
   return (
     <Wrapper>
       <p>
-        © 2020 — Mustafa Türk ✌
-        <br/>
-        <a href="">Source</a>
+        © 2020 — Mustafa Türk
       </p>
     </Wrapper>
   )

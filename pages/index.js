@@ -20,12 +20,12 @@ export default function IndexPage() {
           image="/1.png"
           tags={[
             {
-              name: "github",
+              name: "View on Github",
               url:
-                "https://github.com/mustafa-turk/react-native-awesome-select#readme"
+                "https://github.com/mustafa-turk/react-native-awesome-select"
             },
             {
-              name: "npm",
+              name: "View on NPM",
               url: "https://www.npmjs.com/package/react-native-awesome-select"
             }
           ]}
@@ -37,11 +37,11 @@ export default function IndexPage() {
           image="/2.jpg"
           tags={[
             {
-              name: "github (api)",
+              name: "View on Github (API)",
               url: "https://github.com/mustafa-turk/eksi-scraper"
             },
             {
-              name: "github (client)",
+              name: "View on Github (client)",
               url: "https://github.com/mustafa-turk/eksi-chrome-ext"
             }
           ]}
@@ -58,6 +58,15 @@ const GlobalStyle = createGlobalStyle`
   }
   html {
     font-family: "Inter", sans-serif;
+  }
+  body {
+    animation: fadeIn ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
   }
   h1,
   h2,
@@ -83,11 +92,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 29px;
     }
   }
-  ::selection {
-    background: #3C6AF0;
-    color: white;
-  }
-`
+`;
 
 const Wrapper = styled.div`
   max-width: 1200px;

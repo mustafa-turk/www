@@ -34,4 +34,9 @@ const Links = styled.div`
 const Link = styled.a`
   display: inline-flex;
   margin-right: 20px;
-`
+  border-bottom: 1px solid transparent;
+  transition: border .2s ease;
+  &:hover {
+    border-bottom: 1px solid black;
+  }
+`;

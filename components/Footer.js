@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <Wrapper>
       <p>
-        © 2020 — Mustafa Türk
+        2020 — Mustafa Türk
       </p>
     </Wrapper>
   )
@@ -13,8 +13,7 @@ export default function Footer() {
 const Wrapper = styled.div`
   text-align: center;
   margin: 100px 0 100px 0;
+  color: #9A9A9A;
   font-size: 14px;
-  p {
-    margin-top: 50px;
-  }
+  margin-top: 50px;
 `

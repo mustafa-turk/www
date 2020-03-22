@@ -98,6 +98,9 @@ const GlobalStyle = createGlobalStyle`
     font-size: 34px;
     font-weight: 500;
   }
+  ::selection {
+    background: #79FFE1;
+  }
   @media (max-width: 900px) {
     h1 {
       font-size: 29px;

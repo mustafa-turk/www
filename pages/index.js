@@ -15,34 +15,45 @@ export default function IndexPage() {
       <Header />
       <Content>
         <ContentBlock
-          title="react-native-awesome-select"
-          description="A multiselect component with zero dependencies."
-          image="/1.png"
+          title='code-box (work in progress)'
+          description='A web app where you can share code snippets with others.'
+          image='/1.jpg'
           tags={[
             {
-              name: "View on Github",
-              url:
-                "https://github.com/mustafa-turk/react-native-awesome-select"
-            },
-            {
-              name: "View on NPM",
-              url: "https://www.npmjs.com/package/react-native-awesome-select"
+              name: 'View on Github',
+              url: 'https://github.com/mustafa-turk/code-box'
             }
           ]}
         />
 
         <ContentBlock
-          title="eksi-chrome-ext"
-          description="A Chrome extension that shows a random post of eksisözlük on a new tab using an API built with Node.js. Used the web scraping technique to retrieve data from the website."
-          image="/2.jpg"
+          title='react-native-awesome-select'
+          description='A multiselect component with zero dependencies.'
+          image='/2.jpg'
           tags={[
             {
-              name: "View on Github (API)",
-              url: "https://github.com/mustafa-turk/eksi-scraper"
+              name: 'View on Github',
+              url: 'https://github.com/mustafa-turk/react-native-awesome-select'
             },
             {
-              name: "View on Github (client)",
-              url: "https://github.com/mustafa-turk/eksi-chrome-ext"
+              name: 'View on NPM',
+              url: 'https://www.npmjs.com/package/react-native-awesome-select'
+            }
+          ]}
+        />
+
+        <ContentBlock
+          title='eksi-chrome-ext'
+          description='A Chrome extension that shows a random post of eksisözlük on a new tab using an API built with Node.js. Used the web scraping technique to retrieve data from the website.'
+          image='/3.jpg'
+          tags={[
+            {
+              name: 'View on Github (BE)',
+              url: 'https://github.com/mustafa-turk/eksi-scraper'
+            },
+            {
+              name: 'View on Github (FE)',
+              url: 'https://github.com/mustafa-turk/eksi-chrome-ext'
             }
           ]}
         />

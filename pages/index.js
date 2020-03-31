@@ -15,7 +15,7 @@ export default function IndexPage() {
       <Header />
       <Content>
         <ContentBlock
-          title='code-box (work in progress)'
+          title='snippet-box'
           description='A web app where you can share code snippets with others.'
           image='/1.jpg'
           tags={[

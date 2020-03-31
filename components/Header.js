@@ -6,13 +6,13 @@ export default function Header() {
       <Navigation>
         <Link href="https://github.com/mustafa-turk" target="_blank" rel="noopener">
           Github
-          </Link>
+        </Link>
         <Link href="https://codepen.io/mustafa-turk" target="_blank" rel="noopener">
           Codepen
-          </Link>
+        </Link>
         <Link href="/mustafaturk.pdf" target="_blank" rel="noopener">
           Resume
-          </Link>
+        </Link>
       </Navigation>
       <h1>
         Hi, my name is Mustafa.

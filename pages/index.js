@@ -15,10 +15,14 @@ export default function IndexPage() {
       <Header />
       <Content>
         <ContentBlock
-          title='snippet-box'
+          title='code-box'
           description='A web app where you can share code snippets with others.'
           image='/1.jpg'
           tags={[
+            {
+              name: 'View demo',
+              url: 'https://code-box.now.sh'
+            },
             {
               name: 'View on Github',
               url: 'https://github.com/mustafa-turk/code-box'
@@ -38,22 +42,6 @@ export default function IndexPage() {
             {
               name: 'View on NPM',
               url: 'https://www.npmjs.com/package/react-native-awesome-select'
-            }
-          ]}
-        />
-
-        <ContentBlock
-          title='eksi-chrome-ext'
-          description='A Chrome extension that shows a random post of eksisözlük on a new tab using an API built with Node.js. Used the web scraping technique to retrieve data from the website.'
-          image='/3.jpg'
-          tags={[
-            {
-              name: 'View on Github (BE)',
-              url: 'https://github.com/mustafa-turk/eksi-scraper'
-            },
-            {
-              name: 'View on Github (FE)',
-              url: 'https://github.com/mustafa-turk/eksi-chrome-ext'
             }
           ]}
         />

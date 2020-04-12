@@ -20,7 +20,17 @@ export default class CustomDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
           <meta name="Description" content="Hello World!" />
           <link href="https://fonts.googleapis.com/css?family=Inter:400,500&display=swap" rel="stylesheet" />
-          {this.props.styleTags}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154421172-1"></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-154421172-1');
+              `}} />
+          { this.props.styleTags }
         </Head>
         <body>
           <Main />

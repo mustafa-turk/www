@@ -1,11 +1,13 @@
 import styled, { createGlobalStyle } from 'styled-components'
+import withGA from 'next-ga'
 import Head from 'next/head'
+import Router from 'next/router'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import ContentBlock from '../components/ContentBlock'
 
-export default function IndexPage() {
+function IndexPage() {
   return (
     <Wrapper>
       <GlobalStyle />
@@ -112,3 +114,5 @@ const Content = styled.div`
     display: block;
   }
 `
+
+export default withGA('UA-154421172-1', Router)(IndexPage)

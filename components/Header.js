@@ -10,8 +10,8 @@ export default function Header() {
         <Link href="https://codepen.io/mustafa-turk" target="_blank" rel="noopener">
           Codepen
         </Link>
-        <Link href="/mustafaturk.pdf" target="_blank" rel="noopener">
-          Resume
+        <Link href="https://dribbble.com/mustafa-turk" target="_blank" rel="noopener">
+          Dribbble
         </Link>
       </Navigation>
       <h1>

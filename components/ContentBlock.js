@@ -3,14 +3,14 @@ import styled from 'styled-components'
 export default function ContentBlock({ title, description, image, tags }) {
   return (
     <Wrapper>
-      <img src={image} alt="1" width="100%" />
-      <Title>{title}</Title>
-      <p>{description}</p>
+      <img src={ image } alt="1" width="100%" />
+      <Title>{ title }</Title>
+      <p>{ description }</p>
       <Tags>
         { tags.map((tag, key) => {
           return (
-            <Tag href={tag.url} target="_blank" rel="noopener" key={key}>
-              {tag.name}
+            <Tag href={ tag.url } target="_blank" rel="noopener" key={key}>
+              { tag.name }
               <img src="/external-link.svg" alt="external-link-icon" />
             </Tag>
           );

@@ -47,17 +47,18 @@ const GlobalStyle = createGlobalStyle`
     padding-inline-start: 20px;
   }
   h1 {
-    font-size: 34px;
-    font-weight: 500;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 63px;
+    @media (max-width: 900px) {
+      font-size: 42px;
+      line-height: 43px;
+    }
   }
   ::selection {
     background: #79FFE1;
   }
-  @media (max-width: 900px) {
-    h1 {
-      font-size: 29px;
-    }
-  }
+
 `;
 
 const Wrapper = styled.div`

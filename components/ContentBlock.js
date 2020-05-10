@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-export default function ContentBlock({ title, description, image, tags }) {
+export default function ContentBlock({ title, description, image, tags, index }) {
   return (
-    <Wrapper>
-      <img src={ image } alt="1" width="100%" />
+    <Wrapper index={index}>
+      <img src={ image } alt="project-image" width="100%" />
       <Title>{ title }</Title>
       <p>{ description }</p>
       <Tags>
@@ -11,7 +11,7 @@ export default function ContentBlock({ title, description, image, tags }) {
           return (
             <Tag href={ tag.url } target="_blank" rel="noopener" key={key}>
               { tag.name }
-              <img src="/external-link.svg" alt="external-link-icon" />
+              <img src="/link.svg" alt="external-link-icon" />
             </Tag>
           );
         }) }
@@ -23,6 +23,13 @@ export default function ContentBlock({ title, description, image, tags }) {
 const Wrapper = styled.div`
   padding: 10px;
   flex: 0 50%;
+  animation: ${ props => `fadeIn ease ${props.index + 1}s` };
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  @keyframes fadeIn {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+  }
   @media (max-width: 900px) {
     margin-top: 30px;
   }

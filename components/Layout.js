@@ -1,14 +1,14 @@
 import styled, { createGlobalStyle } from 'styled-components'
 import Head from 'next/head'
 
-export default function Layout({ pageName, children }) {
+function Layout({ pageName, children }) {
   return (
     <Wrapper>
       <GlobalStyle />
       <Head>
-        <title>{ pageName }</title>
+        <title>{pageName}</title>
       </Head>
-      { children }
+      {children}
     </Wrapper>
   )
 }
@@ -70,3 +70,4 @@ const Wrapper = styled.div`
   }
 `
 
+export { Layout }

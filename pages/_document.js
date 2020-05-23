@@ -1,7 +1,7 @@
 import Document, { Head, Main, NextScript } from "next/document"
 import { ServerStyleSheet } from "styled-components"
 
-export default class CustomDocument extends Document {
+class CustomDocument extends Document {
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet()
     const page = renderPage(App => props =>
@@ -30,7 +30,7 @@ export default class CustomDocument extends Document {
 
                 gtag('config', 'UA-154421172-1');
               `}} />
-          { this.props.styleTags }
+          {this.props.styleTags}
         </Head>
         <body>
           <Main />
@@ -40,3 +40,5 @@ export default class CustomDocument extends Document {
     )
   }
 }
+
+export default CustomDocument

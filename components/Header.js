@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-export default function Header() {
+function Header() {
   return (
     <Wrapper>
       <h1>
-        Hey there, I am Mustafa.
+        Hello, I'm Mustafa
       </h1>
       <Description>
-        I am a Software Engineer based Brussels,<br />
+        Software Engineer based Brussels,<br />
         specializing in building (sometimes also designing) websites and applications.
       </Description>
       <Social>
@@ -51,9 +51,7 @@ const Link = styled.a`
     margin-right: 7px;
   }
 `
-const LinedText = styled.span`
-  text-decoration: line-through;
-`
+
 const Description = styled.p`
   margin-top: 30px;
   font-size: 23px;
@@ -61,3 +59,5 @@ const Description = styled.p`
     font-size: 19px;
   }
 `
+
+export { Header }

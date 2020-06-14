@@ -15,13 +15,9 @@ function Header() {
           <img src="/github.svg" width="20" />
            Github
         </Link>
-        <Link href="https://dribbble.com/mustafa-turk" target="_blank" rel="noopener">
-          <img src="/dribbble.svg" width="20" />
-           Dribbble
-        </Link>
-        <Link href="https://www.linkedin.com/in/mustafa-t%C3%BCrk-92b363171/" target="_blank" rel="noopener">
-          <img src="/linkedin.svg" width="20" />
-           LinkedIn
+        <Link href="/mustafa-turk-resume.pdf" target="_blank" rel="noopener">
+          <img src="/doc.svg" width="25" />
+           Resume
         </Link>
       </Social>
     </Wrapper>

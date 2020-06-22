@@ -51,6 +51,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 700;
     line-height: 63px;
     @media (max-width: 900px) {
+      letter-spacing: normal;
       font-size: 42px;
       line-height: 43px;
     }

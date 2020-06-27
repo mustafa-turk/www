@@ -1,25 +1,37 @@
-import styled from 'styled-components'
-import { ContentBlock, Header, Layout, Footer } from '../components'
-import content from '../content'
+import React from 'react';
+import Styled from 'styled-components';
+import { Layout } from "../components";
 
-function IndexPage() {
+export default function me() {
   return (
     <Layout pageName='Hello world — Mustafa Türk'>
-      <Header />
-      <Content>
-        {content.map((contentItemProps, index) => <ContentBlock {...contentItemProps} index={index} key={index} />)}
-      </Content>
-      <Footer />
+      <h1>Hello 👋🏻</h1>
+      <Text>
+        I am a software engineer specializing in web and mobile experiences.
+      </Text>
+      <Footer>
+        Find me on{" "}
+        <Link
+          href='https://github.com/mustafa-turk'
+          target='_blank'
+          rel='noopener'
+        >
+          Github
+        </Link>!
+      </Footer>
     </Layout>
   );
 }
 
-const Content = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  @media (max-width: 768px) {
-    display: block;
-  }
+const Text = Styled.div`
+  font-size: 19px;
 `
 
-export default IndexPage;
+const Link = Styled.a`
+  color: #1782FF;
+`;
+
+const Footer = Styled.div`
+  margin-top: 30px;
+  width: 100%;
+`;

@@ -32,8 +32,8 @@ const GlobalStyle = createGlobalStyle`
   h1,
   h2,
   h3,
-  p,
   body,
+  p,
   a {
     padding: 0;
     margin: 0;
@@ -46,13 +46,15 @@ const GlobalStyle = createGlobalStyle`
   ul {
     padding-inline-start: 20px;
   }
+  hr {
+    border-top: 1px solid #EAEAEA;
+  }
   h1 {
-    font-size: 64px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 63px;
+    font-size: 28px;
     @media (max-width: 900px) {
       letter-spacing: normal;
-      font-size: 42px;
       line-height: 43px;
     }
   }
@@ -63,12 +65,15 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Wrapper = styled.div`
-  max-width: 1200px;
-  margin: 40px auto 0 auto;
+  max-width: 600px;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
   padding: 10px;
-  @media (max-width: 500px) {
-    margin: 40px auto 0 auto;
-  }
 `
 
 export { Layout }

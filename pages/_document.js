@@ -19,7 +19,7 @@ class CustomDocument extends Document {
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
           <meta name="Description" content="Hello World!" />
-          <link href="https://fonts.googleapis.com/css?family=Inter:400,500&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600&display=swap" rel="stylesheet" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154421172-1"></script>
           <script
             dangerouslySetInnerHTML={{

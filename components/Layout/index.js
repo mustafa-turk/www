@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { Navbar } from "../Navbar";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 import * as Styled from './styled'
 
 export function Layout({ pageName, children }) {
@@ -11,6 +12,7 @@ export function Layout({ pageName, children }) {
       </Head>
       <Navbar />
       {children}
+      <Footer />
     </Styled.Layout>
   );
 }

@@ -3,9 +3,10 @@ import styled from 'styled-components'
 export const Navbar = styled.div`
   display: flex;
   justify-content: space-between;
+  margin: 10px;
   margin-top: 30px;
   @media (max-width: 900px) {
-    margin: 10px;
+    margin-top: 10px;
   }
 `
 

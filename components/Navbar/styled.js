@@ -17,5 +17,9 @@ export const NavbarGroup = styled.div`
 export const NavbarLink = styled.a`
   color: #AAAAAA;
   font-size: 14px;
-  margin-left: ${props => props.hasMargin ? '30px' : null}
+  transition: .5s ease;
+  margin-left: ${props => props.hasMargin ? '30px' : null};
+  &:hover {
+    color: black;
+  }
 `;

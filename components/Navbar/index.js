@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import * as Styled from './styled'
 
-export function Navbar() {
+export default function Navbar() {
   return (
     <Styled.Navbar>
       <Styled.NavbarGroup>

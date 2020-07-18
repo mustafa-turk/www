@@ -36,7 +36,7 @@ export default function HomePage() {
               <div>
                 <ContentOverlayTitle>code-box</ContentOverlayTitle>
                 <ContentOverlayBody>
-                  A web app where you can share code snippets with others.
+                  A web app where you can share code snippets with others
                 </ContentOverlayBody>
               </div>
             </ContentOverlay>

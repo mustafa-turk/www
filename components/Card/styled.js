@@ -28,8 +28,7 @@ export const CardOverlay = styled.div`
   }
   div {
     color: white;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
   }
 `;
 

@@ -12,7 +12,15 @@
     "use-remember-state": "^1.1.2"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.7"
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-react": "^7.20.3",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1"
   },
   "scripts": {
     "dev": "next",

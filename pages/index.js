@@ -19,7 +19,7 @@ export default function HomePage() {
           url="http://github.com/mustafa-turk/code-box" />
         <Card
           title="eksi-scraper"
-          description="API endpoint that will return a random entry from Eksi Sözlük"
+          description="Express server that will return a random entry from Eksi Sözlük"
           image="/work/4.jpg"
           url="http://github.com/mustafa-turk/eksi-scraper" />
         <Card

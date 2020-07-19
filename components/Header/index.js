@@ -7,7 +7,7 @@ export function Header() {
       <Styled.HeaderTitle>Hey there 👋</Styled.HeaderTitle>
       <Styled.HeaderSubtitle>
         I’m a Software Engineer based in Brussels.<br />
-        Currently working at Skryv where I break things only to fix it later.
+        Currently working at Skryv where I break things only to fix them later.
       </Styled.HeaderSubtitle>
     </Styled.Header>
   );

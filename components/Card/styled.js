@@ -20,7 +20,7 @@ export const CardOverlay = styled.div`
   transition: .5s ease;
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 81%);
   display: flex;
-  opacity: 0;
+
   border-radius: 5px;
   &:hover {
     opacity: 1;

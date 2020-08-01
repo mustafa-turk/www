@@ -13,18 +13,18 @@ export default function HomePage() {
           image="/work/1.jpg"
           url="http://github.com/mustafa-turk/kopy" />
         <Card
-          title="code-box"
-          description="A web app where you can share code snippets with others"
+          title="kodebox"
+          description="Web app where you can share code snippets with others"
           image="/work/2.jpg"
-          url="http://github.com/mustafa-turk/code-box" />
+          url="http://github.com/mustafa-turk/kodebox" />
         <Card
           title="eksi-scraper"
-          description="Express server that will return a random entry from Eksi Sözlük"
+          description="Express app that will return a random entry from Eksi Sözlük"
           image="/work/4.jpg"
           url="http://github.com/mustafa-turk/eksi-scraper" />
         <Card
           title="react-native-awesome-select"
-          description="A dead simple multiselect component for React Native"
+          description="Dead simple multiselect component for React Native"
           image="/work/3.jpg"
           url="http://github.com/mustafa-turk/react-native-awesome-select" />
       </Content>

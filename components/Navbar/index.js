@@ -7,11 +7,11 @@ export default function Navbar() {
     <Styled.Navbar>
       <Styled.NavbarGroup>
         <Link href='/'>
-          <Styled.NavbarLink>Home</Styled.NavbarLink>
+          <Styled.NavbarLink href='/'>Home</Styled.NavbarLink>
         </Link>
       </Styled.NavbarGroup>
       <Styled.NavbarGroup>
-        <Link href='/about'>
+        <Link href='/mustafa-turk-resume.pdf'>
           <Styled.NavbarLink
             href='/mustafa-turk-resume.pdf'
             target='_blank'

@@ -1,6 +1,6 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+export default createGlobalStyle`
   * {
     box-sizing: border-box;
   }
@@ -42,10 +42,4 @@ export const GlobalStyle = createGlobalStyle`
   ::selection {
     background: #79FFE1;
   }
-`;
-
-export const Layout = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px;
 `;

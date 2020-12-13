@@ -7,12 +7,22 @@ export default function Header() {
       <Title>Mustafa Türk</Title>
       <Body>
         <p>
-          I'm a software engineer working at <Link url="https://skryv.com">Skryv</Link> building web
-          applications.
+          I'm a software engineer working at{' '}
+          <Link url="https://skryv.com" color="#007AFF">
+            Skryv
+          </Link>{' '}
+          building web applications.
         </p>
         <p>
-          You can find me on <Link url="https://github.com/mustafa-turk">Github</Link> and{' '}
-          <Link url="https://www.linkedin.com/in/mustafa-t%C3%BCrk-92b363171/">LinkedIn</Link>.
+          You can find me on{' '}
+          <Link url="https://github.com/mustafa-turk" color="#007AFF">
+            Github
+          </Link>{' '}
+          and{' '}
+          <Link url="https://www.linkedin.com/in/mustafa-t%C3%BCrk-92b363171/" color="#007AFF">
+            LinkedIn
+          </Link>
+          .
         </p>
       </Body>
     </Wrapper>
@@ -38,6 +48,9 @@ const Title = styled.h1`
 
 const Body = styled.div`
   font-size: 21px;
+  p {
+    margin-bottom: 3px;
+  }
   @media (max-width: 900px) {
     font-size: 19px;
   }

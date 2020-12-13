@@ -15,9 +15,8 @@ const LinkWrapper = styled.a`
   color: ${(props) => props.color};
   font-size: inherit;
   transition: 0.5s ease;
-  text-decoration: underline;
   margin-left: ${(props) => (props.hasMargin ? '30px' : null)};
   &:hover {
-    color: black;
+    text-decoration: underline;
   }
 `;

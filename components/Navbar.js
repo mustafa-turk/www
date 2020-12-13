@@ -13,7 +13,9 @@ export default function Navbar() {
       </Group>
       <Group>
         <NextLink href="https://github.com/mustafa-turk/www">
-          <Link href="https://github.com/mustafa-turk/www">Source</Link>
+          <Link href="https://github.com/mustafa-turk/www" target="_blank" rel="noopener">
+            Source
+          </Link>
         </NextLink>
       </Group>
     </Wrapper>

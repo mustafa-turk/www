@@ -15,10 +15,10 @@ export default function HomePage() {
           url="http://github.com/mustafa-turk/react-native-awesome-select"
         />
         <Card
-          title="kodebox"
-          description="Web app where you can share code snippets with others"
+          title="bookmarks"
+          description="Web app where you can share bookmarks with others"
           image="/work/2.jpg"
-          url="http://github.com/mustafa-turk/kodebox"
+          url="http://github.com/mustafa-turk/bookmarks"
         />
       </Content>
     </Layout>
@@ -30,6 +30,7 @@ const Content = styled.div`
   flex-wrap: wrap;
   margin-top: 50px;
   @media (max-width: 768px) {
+    margin-top: 20px;
     display: block;
   }
 `;

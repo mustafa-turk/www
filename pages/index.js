@@ -20,6 +20,12 @@ export default function HomePage() {
           image="/work/2.jpg"
           url="http://github.com/mustafa-turk/bookmarks"
         />
+        <Card
+          title="eksi-random"
+          description="A serverless function that will scrape the first random entry from eksisözlük"
+          image="/work/4.jpg"
+          url="http://github.com/mustafa-turk/eksi-random"
+        />
       </Content>
     </Layout>
   );

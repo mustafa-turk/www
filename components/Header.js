@@ -7,11 +7,11 @@ export default function Header() {
       <Title>Mustafa Türk</Title>
       <Body>
         <p>
-          I'm a software engineer working at{' '}
+          Hey there, I&apos;m currently building products at{' '}
           <Link url="https://skryv.com" color="#007AFF">
             Skryv
           </Link>{' '}
-          building web applications.
+          as a Software Engineer.
         </p>
         <p>
           You can find me on{' '}

@@ -39,7 +39,4 @@ export default createGlobalStyle`
   h1 {
     font-size: 28px;
   }
-  ::selection {
-    background: #79FFE1;
-  }
 `;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default function Card({ url, image, title, description }) {
   return (
     <Wrapper>
-      <a href={url} target="_blank" rel="noopener">
+      <a href={url} target="_blank" rel="noopener noreferrer">
         <img src={image} alt={title} />
         <Overlay>
           <div>

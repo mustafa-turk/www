@@ -31,7 +31,7 @@ const Overlay = styled.div`
   position: absolute;
   width: calc(100% - 6px);
   height: 100%;
-  bottom: 6px;
+  bottom: 7px;
   left: 10;
   align-items: flex-end;
   transition: 0.5s ease;
@@ -50,7 +50,7 @@ const Overlay = styled.div`
 `;
 
 const Title = styled.p`
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 5px;
 `;
 

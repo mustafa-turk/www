@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export default function Footer() {
-  return <Wrapper>2020</Wrapper>;
+  return <Wrapper>2021</Wrapper>;
 }
 
 const Wrapper = styled.div`

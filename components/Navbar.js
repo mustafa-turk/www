@@ -4,30 +4,16 @@ import NextLink from 'next/link';
 export default function Navbar() {
   return (
     <Wrapper>
-      <Group>
-        <NextLink href="https://github.com/mustafa-turk/www">
-          <Link href="https://github.com/mustafa-turk/www" target="_blank" rel="noopener">
-            Source
-          </Link>
-        </NextLink>
-      </Group>
-      <Group>
-        <NextLink href="/mustafa-turk-resume.pdf">
-          <Link href="/mustafa-turk-resume.pdf" target="_blank" rel="noopener">
-            Resume
-          </Link>
-        </NextLink>
-      </Group>
+      <NextLink href="https://github.com/mustafa-turk/www">
+        <Link href="https://github.com/mustafa-turk/www" target="_blank" rel="noopener">
+          Source
+        </Link>
+      </NextLink>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const Group = styled.div`
   display: flex;
 `;
 

@@ -4,14 +4,15 @@ import Link from './Link';
 export default function Header() {
   return (
     <Wrapper>
-      <Title>Mustafa Türk</Title>
+      <Title>Hey there,</Title>
+      <Title>I am Mustafa Türk</Title>
       <Body>
         <p>
-          Hey there, I&apos;m currently building products at{' '}
+          Currently building products as a Frontend Software Engineer @{' '}
           <Link url="https://skryv.com" color="#007AFF">
             Skryv
-          </Link>{' '}
-          as a Software Engineer.
+          </Link>
+          .
         </p>
         <p>
           You can find me on{' '}
@@ -38,20 +39,22 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 32px;
-  font-weight: 900;
-  margin-bottom: 10px;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 44px;
   @media (max-width: 900px) {
-    font-size: 24px;
+    font-size: 32px;
+    line-height: 32px;
   }
 `;
 
 const Body = styled.div`
   font-size: 21px;
-  p {
-    margin-bottom: 3px;
-  }
+  margin-top: 20px;
   @media (max-width: 900px) {
     font-size: 19px;
+  }
+  p {
+    margin-bottom: 3px;
   }
 `;

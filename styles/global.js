@@ -1,11 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
   * {
     box-sizing: border-box;
   }
   html {
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
   }
   body {
     animation: fadeIn ease 1s;

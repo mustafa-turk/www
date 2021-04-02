@@ -20,9 +20,9 @@ export default function HomePage() {
 const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 30px;
   @media (max-width: 600px) {
-    margin-top: 20px;
+    margin-top: 30px;
     display: block;
   }
 `;

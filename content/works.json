@@ -6,10 +6,10 @@
     "url": "https://www.npmjs.com/package/react-native-awesome-select"
   },
   {
-    "title": "github-jobs",
+    "title": "Devjobs",
     "description": "Websites that showcases jobs provided by the GitHub API",
     "image": "/work/1.jpeg",
-    "url": "https://github-jobs-mustafaturk.vercel.app/"
+    "url": "https://devjobs-app.vercel.app/"
   },
   {
     "title": "eksi-random",

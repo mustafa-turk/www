@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import NextLink from 'next/link';
-import { SiGithub, SiLinkedin } from 'react-icons/si';
+import { SiGithub, SiLinkedin, SiDribbble } from 'react-icons/si';
 
 export default function Navbar() {
   return (
@@ -8,6 +8,11 @@ export default function Navbar() {
       <NextLink href="https://github.com/mustafa-turk">
         <Link href="https://github.com/mustafa-turk" target="_blank" rel="noopener">
           <SiGithub size="18px" />
+        </Link>
+      </NextLink>
+      <NextLink href="https://dribbble.com/mustafa-turk">
+        <Link href="https://dribbble.com/mustafa-turk" target="_blank" rel="noopener">
+          <SiDribbble size="18px" />
         </Link>
       </NextLink>
       <NextLink href="https://www.linkedin.com/in/mustafa-t%C3%BCrk-92b363171/">

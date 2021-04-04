@@ -15,8 +15,9 @@ export default class CustomDocument extends Document {
         <Head>
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css?family=Inter:400,500,600,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
             rel="stylesheet"
           />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154421172-1"></script>

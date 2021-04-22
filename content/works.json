@@ -6,7 +6,7 @@
     "url": "https://www.npmjs.com/package/react-native-awesome-select"
   },
   {
-    "title": "Devjobs",
+    "title": "devjobs",
     "description": "Websites that showcases jobs provided by the GitHub API",
     "image": "/work/1.jpeg",
     "url": "https://devjobs-app.vercel.app/"

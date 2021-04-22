@@ -4,14 +4,14 @@ import NextLink from 'next/link';
 export default function Link({ url, children, color }) {
   return (
     <NextLink href={url}>
-      <LinkWrapper href={url} color={color} target="_blank" rel="noopener">
+      <Wrapper href={url} color={color} target="_blank" rel="noopener">
         {children}
-      </LinkWrapper>
+      </Wrapper>
     </NextLink>
   );
 }
 
-const LinkWrapper = styled.a`
+const Wrapper = styled.a`
   color: ${(props) => props.color};
   font-size: inherit;
   transition: 0.5s ease;

@@ -6,13 +6,12 @@ export default function Header() {
     <Wrapper>
       <Title>Mustafa Türk</Title>
       <Body>
-        <p>
-          Currently building products as a Frontend Software Engineer at{' '}
-          <Link url="https://skryv.com" color="#007AFF">
-            Skryv
-          </Link>
-          .
-        </p>
+        Software Engineer with a soft spot for user interfaces.<br />
+        Currently building products at{' '}
+        <Link url="https://skryv.com" color="#007AFF">
+          Skryv
+        </Link>
+        .
       </Body>
     </Wrapper>
   );
@@ -38,8 +37,5 @@ const Body = styled.div`
   margin-top: 10px;
   @media (max-width: 900px) {
     font-size: 19px;
-  }
-  p {
-    margin-bottom: 3px;
   }
 `;

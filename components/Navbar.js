@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 import NextLink from 'next/link';
-import { SiGithub, SiLinkedin, SiDribbble } from 'react-icons/si';
+import { DribbbleIcon, GithubIcon, LinkedinIcon } from './Icon';
 
 export default function Navbar() {
   return (
     <Wrapper>
       <NextLink href="https://github.com/mustafa-turk">
         <Link href="https://github.com/mustafa-turk" target="_blank" rel="noopener">
-          <SiGithub size="18px" />
+          <GithubIcon size="18px" />
         </Link>
       </NextLink>
       <NextLink href="https://dribbble.com/mustafa-turk">
         <Link href="https://dribbble.com/mustafa-turk" target="_blank" rel="noopener">
-          <SiDribbble size="18px" />
+          <DribbbleIcon size="18px" />
         </Link>
       </NextLink>
       <NextLink href="https://www.linkedin.com/in/mustafa-t%C3%BCrk-92b363171/">
@@ -21,7 +21,7 @@ export default function Navbar() {
           target="_blank"
           rel="noopener"
         >
-          <SiLinkedin size="18px" />
+          <LinkedinIcon size="18px" />
         </Link>
       </NextLink>
     </Wrapper>
@@ -34,7 +34,7 @@ const Wrapper = styled.div`
 `;
 
 const Link = styled.a`
-  color: #aaaaaa;
+  color: black;
   font-size: 14px;
   margin-right: 15px;
   transition: 0.5s ease;

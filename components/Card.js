@@ -31,7 +31,7 @@ const Overlay = styled.div`
   position: absolute;
   width: calc(100% - 6px);
   height: 100%;
-  bottom: 7px;
+  bottom: 6px;
   left: 10;
   align-items: flex-end;
   transition: 0.5s ease;

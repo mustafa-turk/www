@@ -1,5 +1,11 @@
 [
   {
+    "title": "Better Hacker News",
+    "description": "A simple Hacker News reader",
+    "image": "/work/better-hacker-news.jpg",
+    "url": "https://www.betterhackernews.com"
+  },
+  {
     "title": "react-native-awesome-select",
     "description": "Dead simple multiselect component for React Native",
     "image": "/work/3.jpg",

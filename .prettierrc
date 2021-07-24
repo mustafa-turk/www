@@ -8,11 +8,5 @@
   "trailingComma": "all",
   "bracketSpacing": true,
   "arrowParens": "always",
-  "endOfLine": "lf",
-  "extends": [
-    "next",
-    "next/core-web-vitals",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-  ]
+  "endOfLine": "lf"
 }

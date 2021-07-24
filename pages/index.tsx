@@ -4,6 +4,7 @@ import { Header, HeaderTitle, HeaderSubtitle } from 'components/common/PageHeade
 import Card from 'components/home/Card';
 import works from 'content/works.json';
 import Spacer from 'components/common/Spacer';
+import theme from 'styles/theme';
 
 export default function HomePage() {
   return (
@@ -14,7 +15,7 @@ export default function HomePage() {
         <HeaderSubtitle>
           Software Engineer with a soft spot for user interfaces.<br />
           Currently building products at{' '}
-          <Link url="https://skryv.com" color="#007AFF">
+          <Link url="https://skryv.com" color={theme.colors.link}>
             Skryv
           </Link>
           .

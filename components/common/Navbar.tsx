@@ -3,6 +3,7 @@ import NextLink from 'next/link';
 import useWindowSize from 'hooks/useWindowSize';
 import { CloseIcon, MenuIcon } from './Icon';
 import { useState } from 'react';
+import theme from 'styles/theme';
 
 export default function Navbar() {
   const { width } = useWindowSize();
@@ -76,12 +77,12 @@ const WrapperDesktop = styled.div`
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid ${theme.colors.gray};
 `;
 
 const WrapperMobile = styled.div`
   padding-bottom: 10px;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid ${theme.colors.gray};
   position: relative;
 `;
 
@@ -116,6 +117,6 @@ const Link = styled.a`
   padding: 10px 15px;
   border-radius: 6px;
   &:hover {
-    background: #ECECEC;
+    background: ${theme.colors.gray};
   }
 `;

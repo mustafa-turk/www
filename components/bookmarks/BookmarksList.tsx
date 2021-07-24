@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import theme from 'styles/theme';
 
 export default function BookmarksList({ bookmarks }) {
   return (
     <>
-      {bookmarks.map((b) => (
+      {bookmarks.map((b: { link: string, title: string, excerpt: string }) => (
         <Bookmark href={b.link} target="_blank" rel="noopener" key={b.link}>
           <BookmarkTitle>{b.title}</BookmarkTitle>
           <p>{b.excerpt}</p>
@@ -18,9 +19,8 @@ const Bookmark = styled.a`
   padding: 10px 15px;
   transition: 0.5s ease;
   &:hover {
-    background: red;
     border-radius: 6px;
-    background: #ECECEC;
+    background: ${theme.colors.gray};
   }
 `
 

@@ -1,50 +1,68 @@
-import styled from 'styled-components';
-import Layout from 'components/common/Layout';
-import { Header, HeaderTitle, HeaderSubtitle } from 'components/common/PageHeader';
-import Card from 'components/home/Card';
+import { getBookmarks } from 'lib/raindrop';
+import Layout from 'components/Layout';
+import Heading from 'components/Heading';
+import List from 'components/List';
+import Spacer from 'components/Spacer';
 import works from 'content/works.json';
-import Spacer from 'components/common/Spacer';
+import styled from 'styled-components';
 
-export default function HomePage() {
+export default function HomePage({ bookmarks }) {
   return (
     <Layout pageName="Mustafa Türk - Hello World">
       <Header>
-        <HeaderTitle>Mustafa Türk</HeaderTitle>
-        <Spacer top="10px" />
-        <HeaderSubtitle>
-          Software Engineer with a soft spot for user interfaces.
-          <br />
-          Currently building products at{' '}
-          <Link url="https://skryv.com" color="#007AFF">
-            Skryv
-          </Link>
-          .
-        </HeaderSubtitle>
+        <h1>Mustafa Türk</h1>
+        <p>Software Engineer with a soft spot for user interfaces.<br />Currently building products at Skryv.</p>
+        <Links>
+          <a href="https://www.github.com/mustafa-turk" target="_blank" rel="noopener">Github →</a>
+          <a href="https://www.linkedin.com/in/mustafa-t%C3%BCrk-92b363171/" target="_blank" rel="noopener">LinkedIn →</a>
+        </Links>
       </Header>
-      <Spacer top="40px" />
-      <PageContent>
-        {works.map((cardProps, i) => (
-          <Card {...cardProps} key={i} />
-        ))}
-      </PageContent>
+
+      <Spacer size="40px" />
+
+      <Heading>Projects</Heading>
+      <Spacer size="10px" />
+      <List items={works} />
+
+      <Spacer size="30px" />
+
+      <Heading>Bookmarks</Heading>
+      <Spacer size="10px" />
+      <List items={bookmarks} />
     </Layout>
   );
 }
 
-const PageContent = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  @media (max-width: 600px) {
-    display: block;
+const Header = styled.div`
+  margin: 15px 0 0 15px;
+  h1 {
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 20px;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 `;
 
-const Link = styled.a`
-  color: ${(props) => props.color};
-  font-size: inherit;
-  transition: 0.5s ease;
-  margin-left: ${(props) => (props.hasMargin ? '30px' : null)};
-  &:hover {
-    text-decoration: underline;
+const Links = styled.div`
+  margin-top: 10px;
+  font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+  a {
+    color: #007AFF;
+    margin-right: 10px;
   }
 `;
+
+export async function getServerSideProps() {
+  const bookmarks = await getBookmarks();
+  return {
+    props: {
+      bookmarks
+    }
+  }
+}

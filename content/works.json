@@ -1,14 +1,7 @@
 [
   {
     "title": "Better Hacker News",
-    "description": "A simple Hacker News reader",
-    "image": "/work/better-hacker-news.jpg",
-    "url": "https://www.betterhackernews.com"
-  },
-  {
-    "title": "react-native-awesome-select",
-    "description": "Dead simple multiselect component for React Native",
-    "image": "/work/react-native.jpg",
-    "url": "https://www.npmjs.com/package/react-native-awesome-select"
+    "excerpt": "A better Hacker News reading experience, built with Next.js and Styled Components",
+    "link": "https://www.betterhackernews.com"
   }
 ]

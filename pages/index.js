@@ -62,7 +62,7 @@ const Title = styled.div`
   display: inline-block;
   font-size: 16px;
   padding: 2px 5px;
-  font-family: sans-serif;
+  font-family: 'Roboto Mono', monospace;
 `
 
 const Links = styled.div`

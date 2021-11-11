@@ -63,6 +63,7 @@ const Title = styled.div`
   font-size: 16px;
   padding: 2px 5px;
   font-family: 'Roboto Mono', monospace;
+  border-radius: 6px;
 `
 
 const Links = styled.div`

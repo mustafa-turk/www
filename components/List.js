@@ -9,19 +9,19 @@ export default function List({ items }) {
   ));
 }
 
+const ItemTitle = styled.p`
+  font-weight: 500;
+  font-size: 18px;
+  color: #ECEDEE;
+`;
+
 const Item = styled.a`
   display: block;
   padding: 10px 15px;
   transition: 0.5s ease;
+  color: #9CA1A5;
   &:hover {
-    background: red;
+    background: #1E2021;
     border-radius: 6px;
-    background: #ECECEC;
   }
-`
-
-const ItemTitle = styled.p`
-  font-weight: 500;
-  font-size: 18px;
-  color: #007AFF;
-`
+`;

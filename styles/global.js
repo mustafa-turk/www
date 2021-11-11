@@ -11,6 +11,8 @@ export default createGlobalStyle`
     animation: fadeIn ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    background: #151718;
+    color: white;
   }
   @keyframes fadeIn {
     0% { opacity: 0 }

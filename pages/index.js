@@ -1,10 +1,10 @@
 import { getBookmarks } from 'lib/raindrop';
 import Layout from 'components/Layout';
-import Heading from 'components/Heading';
 import List from 'components/List';
 import Spacer from 'components/Spacer';
 import works from 'content/works.json';
 import styled from 'styled-components';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function HomePage({ bookmarks }) {
   return (
@@ -13,28 +13,37 @@ export default function HomePage({ bookmarks }) {
         <h1>Mustafa Türk</h1>
         <p>Software Engineer with a soft spot for user interfaces.<br />Currently building products at Skryv.</p>
         <Links>
-          <a href="https://www.github.com/mustafa-turk" target="_blank" rel="noopener">Github →</a>
-          <a href="https://www.linkedin.com/in/mustafa-t%C3%BCrk-92b363171/" target="_blank" rel="noopener">LinkedIn →</a>
+          <a href="https://www.github.com/mustafa-turk" target="_blank" rel="noopener">
+            <FaGithub size="20" />
+          </a>
+          <a href="https://www.linkedin.com/in/mustafa-t%C3%BCrk-92b363171/" target="_blank" rel="noopener">
+            <FaLinkedin size="20" />
+          </a>
         </Links>
       </Header>
 
       <Spacer size="40px" />
 
-      <Heading>Projects</Heading>
+      <Title>Projects</Title>
       <Spacer size="10px" />
       <List items={works} />
 
       <Spacer size="30px" />
 
-      <Heading>Bookmarks</Heading>
+      <Title>Bookmarks</Title>
       <Spacer size="10px" />
+
       <List items={bookmarks} />
     </Layout>
   );
 }
 
 const Header = styled.div`
-  margin: 15px 0 0 15px;
+  margin: 50px 0 0 15px;
+  color: #ECEDEE;
+  @media (max-width: 768px) {
+    margin: 15px 0 0 15px;
+  }
   h1 {
     margin-bottom: 10px;
   }
@@ -46,14 +55,24 @@ const Header = styled.div`
   }
 `;
 
+const Title = styled.div`
+  background: #241F3E;
+  color: #988EF2;
+  margin: 0 15px;
+  display: inline-block;
+  font-size: 16px;
+  padding: 2px 5px;
+  font-family: sans-serif;
+`
+
 const Links = styled.div`
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 20px;
   @media (max-width: 768px) {
     font-size: 18px;
   }
   a {
-    color: #007AFF;
+    color: white;
     margin-right: 10px;
   }
 `;

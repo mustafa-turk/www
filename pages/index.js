@@ -11,12 +11,20 @@ export default function HomePage({ bookmarks }) {
     <Layout pageName="Mustafa Türk - Hello World">
       <Header>
         <h1>Mustafa Türk</h1>
-        <p>Software Engineer with a soft spot for user interfaces.<br />Currently building products at Skryv.</p>
+        <p>
+          Software Engineer with a soft spot for user interfaces.
+          <br />
+          Currently building products at Skryv.
+        </p>
         <Links>
-          <a href="https://www.github.com/mustafa-turk" target="_blank" rel="noopener">
+          <a href="https://www.github.com/mustafa-turk" target="_blank" rel="noopener noreferrer">
             <FaGithub size="20" />
           </a>
-          <a href="https://www.linkedin.com/in/mustafa-t%C3%BCrk-92b363171/" target="_blank" rel="noopener">
+          <a
+            href="https://www.linkedin.com/in/mustafa-t%C3%BCrk-92b363171/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin size="20" />
           </a>
         </Links>
@@ -40,7 +48,7 @@ export default function HomePage({ bookmarks }) {
 
 const Header = styled.div`
   margin: 50px 0 0 15px;
-  color: #ECEDEE;
+  color: #ecedee;
   @media (max-width: 768px) {
     margin: 15px 0 0 15px;
   }
@@ -56,15 +64,15 @@ const Header = styled.div`
 `;
 
 const Title = styled.div`
-  background: #241F3E;
-  color: #988EF2;
+  background: #241f3e;
+  color: #988ef2;
   margin: 0 15px;
   display: inline-block;
   font-size: 16px;
   padding: 2px 5px;
   font-family: 'Roboto Mono', monospace;
   border-radius: 6px;
-`
+`;
 
 const Links = styled.div`
   margin-top: 20px;
@@ -82,7 +90,7 @@ export async function getServerSideProps() {
   const bookmarks = await getBookmarks();
   return {
     props: {
-      bookmarks
-    }
-  }
+      bookmarks,
+    },
+  };
 }

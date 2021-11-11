@@ -11,7 +11,7 @@ export default function Layout({ pageName, children }) {
         <title>{pageName}</title>
       </Head>
       <Deco>
-        <Image src="/blob.svg" height={200} width={200} placeholder="blur" />
+        <Image src="/blob.svg" height={200} width={200} />
       </Deco>
       {children}
     </Wrapper>

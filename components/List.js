@@ -12,16 +12,16 @@ export default function List({ items }) {
 const ItemTitle = styled.p`
   font-weight: 500;
   font-size: 18px;
-  color: #ECEDEE;
+  color: #ecedee;
 `;
 
 const Item = styled.a`
   display: block;
   padding: 10px 15px;
   transition: 0.5s ease;
-  color: #9CA1A5;
+  color: #9ca1a5;
   &:hover {
-    background: #1E2021;
+    background: #1e2021;
     border-radius: 6px;
   }
 `;

@@ -5,22 +5,17 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
   html {
-    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    font-family: "Inter"
   }
   body {
     animation: fadeIn ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    background: #151718;
-    color: white;
+    background: white;
   }
   @keyframes fadeIn {
     0% { opacity: 0 }
     100% { opacity: 1 }
-  }
-  h1 {
-   font-weight: 800;
-   font-size: 28px;
   }
   h1,
   h2,

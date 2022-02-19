@@ -1,14 +1,28 @@
-import Layout from 'components/Layout';
 import styled from 'styled-components';
+import Layout from 'components/Layout';
+import List from 'components/List';
+import Divider from 'components/Divider';
+import works from 'content/works.json';
+import { getBookmarks } from 'lib/raindrop';
 
-export default function HomePage() {
+export default function HomePage({ bookmarks }) {
   return (
     <Layout pageName="Mustafa Türk - Hello World">
       <Header>Mustafa Türk</Header>
       <Main>
-        <Description>Software Engineer at Box</Description>
-        <Description isPast>Software Engineer at Skryv</Description>
+        <Description>Software Engineer at Box, Amsterdam</Description>
+        <Description isPast>Software Engineer at Skryv, Brussels</Description>
       </Main>
+      <Divider size={4} />
+      <Section>
+        <SectionTitle>Projects</SectionTitle>
+        <List items={works} />
+      </Section>
+      <Divider size={2} />
+      <Section>
+        <SectionTitle>Bookmarks</SectionTitle>
+        <List items={bookmarks} />
+      </Section>
       <Footer>
         <Link href="https://www.github.com/mustafa-turk" target="_blank" rel="noopener noreferrer">
           Github
@@ -25,18 +39,26 @@ export default function HomePage() {
   );
 }
 
+export async function getServerSideProps() {
+  const bookmarks = await getBookmarks();
+  return {
+    props: {
+      bookmarks,
+    },
+  };
+}
+
 const Header = styled.header`
   display: inline;
   font-weight: 800;
-  font-size: 21px;
-  background: linear-gradient(90deg, #7928ca, #ff0080);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  margin-bottom: 10px;
 `;
 
 const Main = styled.main`
   font-weight: 600;
   font-size: 18px;
+  width: 400px;
 `;
 
 const Description = styled.div`
@@ -69,8 +91,15 @@ const Link = styled.a`
 const Footer = styled.footer`
   display: flex;
   gap: 10px;
-  border-top: 1px dashed #202020;
+  border-top: 1px dashed #b3b3b3;
   padding-top: 10px;
   font-size: 14px;
-  width: 300px;
+  margin-top: 60px;
+`;
+
+const Section = styled.section``;
+
+const SectionTitle = styled.h2`
+  font-size: 18px;
+  font-weight: 600;
 `;

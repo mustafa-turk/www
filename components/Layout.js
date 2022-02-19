@@ -16,11 +16,8 @@ export default function Layout({ pageName, children }) {
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
   flex-direction: column;
-  gap: 30px;
-  width: 300px;
+  max-width: 960px;
+  padding: 20px;
   margin: 0 auto;
 `;

@@ -29,6 +29,9 @@ const Header = styled.header`
   display: inline-flex;
   font-weight: 800;
   font-size: 21px;
+  background: linear-gradient(90deg, #7928ca, #ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 const Main = styled.main`
@@ -47,18 +50,9 @@ const Description = styled.div`
     left: -3%;
     width: 106%;
     height: ${(p) => (p.isPast ? '3px' : '0')};
-    background-color: #ed6a5e;
+    background: #ff0080;
     z-index: -1;
   }
-`;
-
-const Footer = styled.footer`
-  display: flex;
-  gap: 10px;
-  border-top: 1px dashed #202020;
-  padding-top: 10px;
-  font-size: 14px;
-  width: 300px;
 `;
 
 const Link = styled.a`
@@ -69,4 +63,13 @@ const Link = styled.a`
   &:hover {
     background-color: #eaeaea;
   }
+`;
+
+const Footer = styled.footer`
+  display: flex;
+  gap: 10px;
+  border-top: 1px dashed #202020;
+  padding-top: 10px;
+  font-size: 14px;
+  width: 300px;
 `;

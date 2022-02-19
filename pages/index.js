@@ -26,7 +26,7 @@ export default function HomePage() {
 }
 
 const Header = styled.header`
-  display: inline-flex;
+  display: inline;
   font-weight: 800;
   font-size: 21px;
   background: linear-gradient(90deg, #7928ca, #ff0080);
@@ -42,6 +42,7 @@ const Main = styled.main`
 const Description = styled.div`
   display: inline-box;
   position: relative;
+  opacity: ${(p) => (p.isPast ? '0.3' : '1')};
   z-index: 0;
   &:before {
     content: '';
@@ -49,8 +50,8 @@ const Description = styled.div`
     top: 50%;
     left: -3%;
     width: 106%;
-    height: ${(p) => (p.isPast ? '3px' : '0')};
-    background: #ff0080;
+    height: ${(p) => (p.isPast ? '2px' : '0')};
+    background: #000;
     z-index: -1;
   }
 `;

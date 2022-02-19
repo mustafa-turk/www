@@ -17,7 +17,8 @@ export default function Layout({ pageName, children }) {
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   flex-direction: column;
   gap: 30px;
   width: 300px;

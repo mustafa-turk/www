@@ -15,8 +15,9 @@ export default function HomePage({ bookmarks }) {
 
       <Current>
         <Pulse />
-        Frontend Software Engineer, Box Sign at Box
+        Currently: Frontend Software Engineer, Box Sign at Box
       </Current>
+      <Spacer size={16} />
 
       <Spacer size={64} />
 
@@ -77,9 +78,10 @@ const Pulse = styled.div`
   display: inline-block;
   margin-right: 10px;
   background: #d23a20;
-  border-radius: 50%;
-  height: 15px;
+  border-radius: 10px;
   width: 15px;
+  min-width: 15px;
+  height: 15px;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   transform: scale(1);
   animation: pulse 2s infinite;

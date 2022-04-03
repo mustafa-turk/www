@@ -1,21 +1,37 @@
 import styled from 'styled-components';
 
-export default function List({ items }) {
-  return items.map((item) => (
-    <Item href={item.link} target="_blank" rel="noopener" key={item.link}>
-      <ItemTitle>{item.title}</ItemTitle>
-      <p>{item.excerpt}</p>
-    </Item>
-  ));
+// function List({ items }) {
+//   return items.map((item) => (
+//     <Item href={item.link} target="_blank" rel="noopener" key={item.link}>
+//       <ItemTitle>{item.title}</ItemTitle>
+//       <p>{item.excerpt}</p>
+//     </Item>
+//   ));
+// }
+
+export function Item({ href }) {
+  return (
+    <Wrapper>
+      <Title href={href}>Hello</Title>
+      <Body>Hallo</Body>
+    </Wrapper>
+  );
 }
 
-const Item = styled.a`
+const Wrapper = styled.div``;
+
+const Title = styled.a`
   display: block;
-  margin: 15px 0;
-  transition: 0.5s ease;
 `;
 
-const ItemTitle = styled.p`
-  font-weight: 600;
-  color: #0363fe;
+const ListItemDecoration = styled.div`
+  width: 10px;
+  height: 10px;
+  background: #54525f;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 5px;
+`;
+const Body = styled.div`
+  display: block;
 `;

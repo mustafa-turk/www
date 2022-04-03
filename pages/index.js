@@ -1,105 +1,102 @@
 import styled from 'styled-components';
 import Layout from 'components/Layout';
-import List from 'components/List';
-import Divider from 'components/Divider';
-import works from 'content/works.json';
+import Section from 'components/Section';
+import Spacer from 'components/Spacer';
 import { getBookmarks } from 'lib/raindrop';
 
 export default function HomePage({ bookmarks }) {
   return (
     <Layout pageName="Mustafa Türk - Hello World">
-      <Header>Mustafa Türk</Header>
-      <Main>
-        <Description>Software Engineer at Box, Amsterdam</Description>
-        <Description isPast>Software Engineer at Skryv, Brussels</Description>
-      </Main>
-      <Divider size={4} />
+      <Heading color="#7257F2">Mustafa Türk</Heading>
+      <Heading>Software Engineer</Heading>
+      <Heading color="#54525F">Amsterdam, Netherlands</Heading>
+
+      <Spacer size={16} />
+
+      <Current>
+        <Pulse />
+        Frontend Software Engineer, Box Sign at Box
+      </Current>
+
+      <Spacer size={64} />
+
       <Section>
-        <SectionTitle>Projects</SectionTitle>
-        <List items={works} />
+        <Section.Title>About</Section.Title>
+        <Section.Body>
+          Born and raised in Belgium. Studied Multimedia and Communication Technology at the Erasmus
+          University of Brussels. Recently moved to Amsterdam to join the Box Sign team at Box. You
+          can find me on{' '}
+          <Link href="https://be.linkedin.com/in/mustafa-t%C3%BCrk-92b363171">LinkedIn</Link> and{' '}
+          <Link href="github.com/mustafa-turk">Github</Link>.
+        </Section.Body>
       </Section>
-      <Divider size={2} />
+
+      <Spacer size={32} />
+
       <Section>
-        <SectionTitle>Bookmarks</SectionTitle>
-        <List items={bookmarks} />
+        <Section.Title>Personal</Section.Title>
+        <Section.Body>
+          Building <Link href="http://betterhackernews.com">BetterHackerNews</Link> in my spare
+          time.
+        </Section.Body>
       </Section>
-      <Footer>
-        <Link href="https://www.github.com/mustafa-turk" target="_blank" rel="noopener noreferrer">
-          Github
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/mustafa-t%C3%BCrk-92b363171/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </Link>
-      </Footer>
     </Layout>
   );
 }
 
 export async function getServerSideProps() {
-  const bookmarks = await getBookmarks();
+  // const bookmarks = await getBookmarks();
   return {
     props: {
-      bookmarks,
+      bookmarks: [],
     },
   };
 }
 
-const Header = styled.header`
-  display: inline;
-  font-weight: 800;
-  font-size: 28px;
-  margin-bottom: 10px;
+const Heading = styled.h1`
+  font-size: 48px;
+  color: ${(props) => props.color || '#fff'};
 `;
 
-const Main = styled.main`
-  font-weight: 600;
-  font-size: 18px;
-  width: 400px;
-`;
-
-const Description = styled.div`
-  display: inline-box;
-  position: relative;
-  opacity: ${(p) => (p.isPast ? '0.3' : '1')};
-  z-index: 0;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -3%;
-    width: 106%;
-    height: ${(p) => (p.isPast ? '2px' : '0')};
-    background: #000;
-    z-index: -1;
-  }
+const Current = styled.div`
+  display: flex;
+  align-items: center;
+  font-family: Roboto Mono;
 `;
 
 const Link = styled.a`
-  color: #141414;
-  transition: all 0.4s ease;
-  padding: 3px;
-  border-radius: 3px;
-  &:hover {
-    background-color: #eaeaea;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+  text-decoration-color: #707070;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 1.5px;
+`;
+
+const Pulse = styled.div`
+  display: inline-block;
+  margin-right: 10px;
+  background: #d23a20;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(210, 58, 32, 0.6);
+    }
+
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(64, 18, 12, 0);
+    }
+
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(64, 18, 12, 0);
+    }
   }
-`;
-
-const Footer = styled.footer`
-  display: flex;
-  gap: 10px;
-  border-top: 1px dashed #b3b3b3;
-  padding-top: 10px;
-  font-size: 14px;
-  margin-top: 60px;
-`;
-
-const Section = styled.section``;
-
-const SectionTitle = styled.h2`
-  font-size: 18px;
-  font-weight: 600;
 `;

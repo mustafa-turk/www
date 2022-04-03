@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   * {
     box-sizing: border-box;
+    color: white;
   }
   html {
     font-family: "Inter"
@@ -11,7 +12,7 @@ export default createGlobalStyle`
     animation: fadeIn ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    background: white;
+    background: #020104;
   }
   @keyframes fadeIn {
     0% { opacity: 0 }
@@ -28,13 +29,6 @@ export default createGlobalStyle`
   }
   a {
     text-decoration: none;
-    color: black;
     cursor: pointer;
-  }
-  ul {
-    padding-inline-start: 20px;
-  }
-  hr {
-    border-top: 1px solid #EAEAEA;
   }
 `;

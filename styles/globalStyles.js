@@ -3,16 +3,16 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   * {
     box-sizing: border-box;
-    color: white;
   }
   html {
-    font-family: "Inter"
+    font-family: "Work Sans";
+    color: #dedede;
   }
   body {
     animation: fadeIn ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    background: #020104;
+    background: black;
   }
   @keyframes fadeIn {
     0% { opacity: 0 }

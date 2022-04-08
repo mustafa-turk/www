@@ -1,17 +1,27 @@
 import styled from 'styled-components';
 
-const Section = styled.div`
-  color: #dcdcdc;
+const Section = styled.section`
+  margin: 48px 0;
 `;
-const Title = styled.h3`
+const Heading = styled.h1`
+  font-size: 20px;
   font-weight: 600;
-  color: #54525f;
+`;
+const Description = styled.span`
+  font-size: 16px;
+  color: #7c7c80;
 `;
 const Body = styled.p`
-  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 `;
 
-Section.Title = Title;
+Section.Heading = Heading;
 Section.Body = Body;
+Section.Description = Description;
 
 export default Section;

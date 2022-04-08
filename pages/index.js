@@ -1,104 +1,72 @@
-import styled from 'styled-components';
-import Layout from 'components/Layout';
+import PageLayout from 'components/PageLayout';
 import Section from 'components/Section';
+import Footer from 'components/Footer';
 import Spacer from 'components/Spacer';
+import Link from 'components/Link';
+
 import { getBookmarks } from 'lib/raindrop';
 
 export default function HomePage({ bookmarks }) {
   return (
-    <Layout pageName="Mustafa Türk - Hello World">
-      <Heading color="#7257F2">Mustafa Türk</Heading>
-      <Heading>Software Engineer</Heading>
-      <Heading color="#54525F">Amsterdam, Netherlands</Heading>
+    <PageLayout title="Mustafa Türk - Hello World">
+      <header>Mustafa Türk</header>
 
-      <Spacer size={16} />
+      <main>
+        <Section>
+          <Section.Heading>Me</Section.Heading>
+          <Spacer size={18} />
+          <Section.Body>
+            <span>
+              I am Mustafa, a Frontend Software Engineer at Box, currently living and working from
+              Amsterdam. I have a soft spot for user interfaces and clean design.
+            </span>
+            <span>
+              You can find me on{' '}
+              <Link href="https://github.com/mustafa-turk" inline>
+                Github
+              </Link>{' '}
+              and{' '}
+              <Link href="https://linkedin.com/in/mustafa-t%C3%BCrk-92b363171" inline>
+                Linkedin
+              </Link>
+              .
+            </span>
+          </Section.Body>
+        </Section>
 
-      <Current>
-        <Pulse />
-        Currently: Frontend Software Engineer, Box Sign at Box
-      </Current>
-      <Spacer size={16} />
+        <Section>
+          <Section.Heading>Projects</Section.Heading>
+          <Section.Description>Things I build in my spare time.</Section.Description>
+          <Spacer size={18} />
+          <Section.Body>
+            <Link href="https://betterhackernews.com">Better Hacker News</Link>
+          </Section.Body>
+        </Section>
 
-      <Spacer size={64} />
+        <Section>
+          <Section.Heading>Bookmarks</Section.Heading>
+          <Section.Description>Things I found on the internet.</Section.Description>
+          <Spacer size={18} />
+          <Section.Body>
+            {bookmarks.map((bookmark) => (
+              <Link href={bookmark.link} key={bookmark.title}>
+                {bookmark.title}
+              </Link>
+            ))}
+          </Section.Body>
+        </Section>
+      </main>
 
-      <Section>
-        <Section.Title>About</Section.Title>
-        <Section.Body>
-          Born and raised in Belgium. Studied Multimedia and Communication Technology at the Erasmus
-          University of Brussels. Recently moved to Amsterdam to join the Box Sign team at Box. You
-          can find me on{' '}
-          <Link href="https://be.linkedin.com/in/mustafa-t%C3%BCrk-92b363171">LinkedIn</Link> and{' '}
-          <Link href="github.com/mustafa-turk">Github</Link>.
-        </Section.Body>
-      </Section>
-
-      <Spacer size={32} />
-
-      <Section>
-        <Section.Title>Personal</Section.Title>
-        <Section.Body>
-          Building <Link href="http://betterhackernews.com">BetterHackerNews</Link> in my spare
-          time.
-        </Section.Body>
-      </Section>
-    </Layout>
+      <Footer />
+    </PageLayout>
   );
 }
 
 export async function getServerSideProps() {
-  // const bookmarks = await getBookmarks();
+  const bookmarks = await getBookmarks();
   return {
     props: {
-      bookmarks: [],
+      bookmarks,
     },
   };
 }
-
-const Heading = styled.h1`
-  font-size: 48px;
-  color: ${(props) => props.color || '#fff'};
-`;
-
-const Current = styled.div`
-  display: flex;
-  align-items: center;
-  font-family: Roboto Mono;
-`;
-
-const Link = styled.a`
-  display: inline-flex;
-  align-items: center;
-  text-decoration: underline;
-  text-decoration-color: #707070;
-  text-underline-offset: 1.5px;
-  text-decoration-thickness: 1.5px;
-`;
-
-const Pulse = styled.div`
-  display: inline-block;
-  margin-right: 10px;
-  background: #d23a20;
-  border-radius: 10px;
-  width: 15px;
-  min-width: 15px;
-  height: 15px;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-  transform: scale(1);
-  animation: pulse 2s infinite;
-  @keyframes pulse {
-    0% {
-      transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(210, 58, 32, 0.6);
-    }
-
-    70% {
-      transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(64, 18, 12, 0);
-    }
-
-    100% {
-      transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(64, 18, 12, 0);
-    }
-  }
-`;

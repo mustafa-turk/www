@@ -17,11 +17,7 @@ export default class CustomDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;1,300&family=Roboto+Mono&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap"
             rel="stylesheet"
           />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154421172-1"></script>

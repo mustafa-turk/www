@@ -14,7 +14,7 @@ const Description = styled.span`
 const Body = styled.p`
   font-size: 16px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 23px;
   display: flex;
   flex-direction: column;
   gap: 12px;

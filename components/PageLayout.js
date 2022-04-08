@@ -16,7 +16,7 @@ function PageLayout({ title, children }) {
 
 const Wrapper = styled.div`
   max-width: 640px;
-  padding: 10px;
+  padding: 20px;
   margin: 20px auto;
 `;
 

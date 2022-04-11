@@ -1,27 +1,21 @@
-import styled from 'styled-components';
+function Section({ children }) {
+  return <div>{children}</div>;
+}
 
-const Section = styled.section`
-  margin: 48px 0;
-`;
-const Heading = styled.h1`
-  font-size: 20px;
-  font-weight: 600;
-`;
-const Description = styled.span`
-  font-size: 16px;
-  color: #7c7c80;
-`;
-const Body = styled.p`
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 23px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-`;
+function SectionHeading({ children }) {
+  return <h1 className="text-xl font-bold">{children}</h1>;
+}
 
-Section.Heading = Heading;
-Section.Body = Body;
-Section.Description = Description;
+function SectionDescription({ children }) {
+  return <span className="text-md text-neutral-500">{children}</span>;
+}
+
+function SectionBody({ children }) {
+  return <p className="text-md flex flex-col gap-3 leading-6 mt-4">{children}</p>;
+}
+
+Section.Heading = SectionHeading;
+Section.Body = SectionBody;
+Section.Description = SectionDescription;
 
 export default Section;

@@ -1,20 +1,23 @@
-import PageLayout from 'components/PageLayout';
+import Head from 'next/head';
+
 import Section from 'components/Section';
 import Footer from 'components/Footer';
-import Spacer from 'components/Spacer';
 import Link from 'components/Link';
 
 import { getBookmarks } from 'lib/raindrop';
 
 export default function HomePage({ bookmarks }) {
   return (
-    <PageLayout title="Mustafa Türk - Hello World">
+    <div className="flex flex-col gap-16 max-w-xl p-5 mx-auto my-6 my-1">
+      <Head>
+        <title>Mustafa Türk - Hello World</title>
+      </Head>
+
       <header>Mustafa Türk</header>
 
-      <main>
+      <main className="flex flex-col gap-14">
         <Section>
           <Section.Heading>Me</Section.Heading>
-          <Spacer size={18} />
           <Section.Body>
             <span>
               I am Mustafa, a Frontend Software Engineer at Box, currently living and working from
@@ -37,7 +40,6 @@ export default function HomePage({ bookmarks }) {
         <Section>
           <Section.Heading>Projects</Section.Heading>
           <Section.Description>Things I build in my spare time.</Section.Description>
-          <Spacer size={18} />
           <Section.Body>
             <Link href="https://betterhackernews.com">Better Hacker News</Link>
           </Section.Body>
@@ -46,7 +48,6 @@ export default function HomePage({ bookmarks }) {
         <Section>
           <Section.Heading>Bookmarks</Section.Heading>
           <Section.Description>Things I found on the internet.</Section.Description>
-          <Spacer size={18} />
           <Section.Body>
             {bookmarks.map((bookmark) => (
               <Link href={bookmark.link} key={bookmark.title}>
@@ -58,7 +59,7 @@ export default function HomePage({ bookmarks }) {
       </main>
 
       <Footer />
-    </PageLayout>
+    </div>
   );
 }
 

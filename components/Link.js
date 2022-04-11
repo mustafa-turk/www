@@ -1,20 +1,17 @@
-import styled from 'styled-components';
-
 function Link({ href, children, inline }) {
   return (
-    <Anchor href={href} target="_blank" inline={inline}>
+    <a
+      className={`${
+        inline ? 'inline' : 'block'
+      } text-inherit underline decoration-dotted decoration-neutral-500 underline-offset-4`}
+      href={href}
+      target="_blank"
+      inline={inline}
+      rel="noreferrer"
+    >
       {children}
-    </Anchor>
+    </a>
   );
 }
-
-const Anchor = styled.a`
-  display: ${(p) => (p.inline ? 'inline' : 'block')};
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-underline-offset: 3px;
-  text-decoration-color: #7c7c80;
-`;
 
 export default Link;

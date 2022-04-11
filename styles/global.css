@@ -6,3 +6,13 @@ html {
   @apply text-neutral-300;
   @apply bg-black;
 }
+
+body {
+  animation: fadeIn ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}

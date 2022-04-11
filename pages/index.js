@@ -20,16 +20,15 @@ export default function HomePage({ bookmarks }) {
           <Section.Heading>Me</Section.Heading>
           <Section.Body>
             <span>
-              I am Mustafa, a Frontend Software Engineer at Box, currently living and working from
+              I am Mustafa, a Frontend Software Engineer at <Link href="https://box.com" inline>
+                Box
+              </Link>, currently living and working from
               Amsterdam. I have a soft spot for user interfaces and clean design.
             </span>
             <span>
-              You can find me on{' '}
-              <Link href="https://github.com/mustafa-turk" inline>
+              You can find me on <Link href="https://github.com/mustafa-turk" inline>
                 Github
-              </Link>{' '}
-              and{' '}
-              <Link href="https://linkedin.com/in/mustafa-t%C3%BCrk-92b363171" inline>
+              </Link> and <Link href="https://linkedin.com/in/mustafa-t%C3%BCrk-92b363171" inline>
                 Linkedin
               </Link>
               .

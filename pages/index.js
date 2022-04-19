@@ -20,7 +20,7 @@ export default function HomePage({ bookmarks }) {
           <Section.Heading>Me</Section.Heading>
           <Section.Body>
             <span>
-              I am Mustafa, a Frontend Software Engineer at <Link href="https://box.com" inline>Box</Link>, currently living and working from Amsterdam.
+              I am a Frontend Software Engineer at <Link href="https://www.box.com/home" inline>Box</Link>, currently living and working from Amsterdam.
               I have a soft spot for user interfaces and clean design.
             </span>
             <span>
@@ -30,7 +30,7 @@ export default function HomePage({ bookmarks }) {
         </Section>
 
         <Section>
-          <Section.Heading>Projects</Section.Heading>
+          <Section.Heading>After hours</Section.Heading>
           <Section.Description>Things I build in my spare time.</Section.Description>
           <Section.Body>
             <Link href="https://betterhackernews.com">Better Hacker News</Link>

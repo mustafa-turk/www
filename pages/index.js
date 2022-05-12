@@ -18,8 +18,8 @@ export default function HomePage({ bookmarks, posts }) {
         <Section.Heading>Me</Section.Heading>
         <Section.Body>
           <span>
-            I am a Frontend Software Engineer at <Link href="https://www.box.com/home" inline target="_blank">Box</Link>, currently living and working from Amsterdam.
-            I have a soft spot for user interfaces and clean design.
+            I am a Software Engineer with a soft spot for user interfaces. <br />
+            Currently based in Amsterdam, building <Link href="https://www.box.com/esignature" inline target="_blank">Box Sign</Link> at <Link href="https://www.box.com/home" inline target="_blank">Box</Link>.
           </span>
           <span>
             You can find me on <Link href="https://github.com/mustafa-turk" inline target="_blank">Github</Link> and <Link href="https://linkedin.com/in/mustafa-t%C3%BCrk-92b363171" target="_blank" inline>Linkedin</Link>.

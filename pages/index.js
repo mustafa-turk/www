@@ -29,7 +29,7 @@ export default function HomePage({ bookmarks, posts }) {
 
       <Section>
         <Section.Heading>After hours</Section.Heading>
-        <Section.Description>Things I build in my spare time.</Section.Description>
+        <Section.Description>Things I build in my spare time</Section.Description>
         <Section.Body>
           <Link href="https://betterhackernews.com" target="_blank">Better Hacker News</Link>
         </Section.Body>
@@ -37,7 +37,7 @@ export default function HomePage({ bookmarks, posts }) {
 
       <Section>
         <Section.Heading>Posts</Section.Heading>
-        <Section.Description>Things I have written as notes.</Section.Description>
+        <Section.Description>Things I have written as notes</Section.Description>
         <Section.Body>
           {posts.map((post) => (
             <Link href={`/posts/${post.slug}`} key={post.title}>
@@ -49,7 +49,7 @@ export default function HomePage({ bookmarks, posts }) {
 
       <Section>
         <Section.Heading>Bookmarks</Section.Heading>
-        <Section.Description>Things I found on the internet.</Section.Description>
+        <Section.Description>Things I found on the internet</Section.Description>
         <Section.Body>
           {bookmarks.map((bookmark) => (
             <Link href={bookmark.link} key={bookmark.title}>

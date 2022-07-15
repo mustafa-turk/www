@@ -11,7 +11,7 @@ function SectionDescription({ children }) {
 }
 
 function SectionBody({ children }) {
-  return <p className="text-md flex flex-col gap-3 leading-6 mt-4">{children}</p>;
+  return <p className="text-md font-light flex flex-col gap-3 leading-6 mt-4">{children}</p>;
 }
 
 Section.Heading = SectionHeading;

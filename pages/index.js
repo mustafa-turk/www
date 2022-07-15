@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 
 import Layout from 'components/Layout';
 import Section from 'components/Section';
@@ -15,7 +16,12 @@ export default function HomePage({ bookmarks, posts }) {
       </Head>
 
       <Section>
-        <Section.Heading>Me</Section.Heading>
+        <Section.Heading>
+          <div className="flex items-center gap-4 mb-8">
+            <div className="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full w-[40px] h-[40px]" />
+            <a href="/" className="text-lg text-lg">Mustafa Türk</a>
+          </div>
+        </Section.Heading>
         <Section.Body>
           <span>
             I am a Software Engineer with a soft spot for user interfaces. <br />
@@ -28,16 +34,17 @@ export default function HomePage({ bookmarks, posts }) {
       </Section>
 
       <Section>
-        <Section.Heading>After hours</Section.Heading>
+        <Section.Heading>Recent endeavors</Section.Heading>
         <Section.Description>Things I build in my spare time</Section.Description>
         <Section.Body>
           <Link href="https://betterhackernews.com" target="_blank">Better Hacker News</Link>
+          <Link href="https://github.com/mustafa-turk/www" target="_blank">Personal Website</Link>
         </Section.Body>
       </Section>
 
       <Section>
-        <Section.Heading>Posts</Section.Heading>
-        <Section.Description>Things I have written as notes</Section.Description>
+        <Section.Heading>Notes</Section.Heading>
+        <Section.Description>Things I have found interesting and written as small notes</Section.Description>
         <Section.Body>
           {posts.map((post) => (
             <Link href={`/posts/${post.slug}`} key={post.title}>

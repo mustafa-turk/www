@@ -12,10 +12,7 @@ export default function CustomApp({ Component, pageProps }) {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154421172-1"></script>
         <script
           dangerouslySetInnerHTML={{

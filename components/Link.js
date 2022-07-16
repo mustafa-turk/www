@@ -3,7 +3,7 @@ function Link({ href, children, inline, ...props }) {
     <a
       className={`${
         inline ? 'inline' : 'block'
-      } text-inherit underline decoration-dotted decoration-neutral-500 underline-offset-2`}
+      } text-inherit underline decoration-dotted decoration-neutral-400 underline-offset-[3px]`}
       href={href}
       inline={inline}
       rel="noreferrer"

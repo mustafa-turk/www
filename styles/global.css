@@ -24,3 +24,17 @@ header, main, footer {
 
 main { animation-delay: .3s }
 footer { animation-delay: .5s }
+
+@font-face {
+  font-family: 'Untitled Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('/assets/UntitledSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Untitled Sans';
+  font-style: bold;
+  font-weight: 500;
+  src: local(''), url('/assets/UntitledSans-Medium.woff') format('woff');
+}

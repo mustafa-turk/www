@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
 
+import Header from 'components/Header';
 import Layout from 'components/Layout';
 import Section from 'components/Section';
 import Link from 'components/Link';
@@ -15,12 +15,11 @@ export default function HomePage({ bookmarks, posts }) {
         <title>Mustafa Türk - Hello World</title>
       </Head>
 
+      <Header />
+
       <Section>
         <Section.Heading>
-          <div className="flex items-center gap-4 mb-8">
-            <div className="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full w-[40px] h-[40px]" />
-            <a href="/" className="text-lg text-lg">Mustafa Türk</a>
-          </div>
+          Me
         </Section.Heading>
         <Section.Body>
           <span>

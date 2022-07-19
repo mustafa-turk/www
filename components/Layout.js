@@ -5,7 +5,7 @@ export default function Layout({ children, className }) {
     <div className='flex flex-col gap-16 max-w-2xl p-5 mx-auto mt-6'>
       <Header />
 
-      <main className={`flex flex-col ${className}`}>{children}</main>
+      {children}
 
       <footer className='text-center text-neutral-500 text-sm'>
         © 2022 Mustafa Türk

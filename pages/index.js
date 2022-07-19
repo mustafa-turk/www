@@ -29,7 +29,7 @@ export default function HomePage({ bookmarks, posts }) {
           <TimelineEvent active>
             <TimelineEvent.Title>Currently</TimelineEvent.Title>
             <TimelineEvent.Description>
-              Software Engineer at {linkify("https://www.box.com", "Box")},
+              Software Engineer at {linkify("https://www.box.com/home", "Box")},
               Amsterdam. Building{" "}
               {linkify("https://www.box.com/en-nl/esignature", "Box Sign")}.
             </TimelineEvent.Description>
@@ -42,6 +42,26 @@ export default function HomePage({ bookmarks, posts }) {
               Brussels.
             </TimelineEvent.Description>
           </TimelineEvent>
+        </div>
+
+        <div className='py-6'>
+          <Section.Heading>Personal Projects</Section.Heading>
+          <Section.Body>
+            <Link href='https://betterhackernews.com' target='_blank'>
+              Better Hacker News
+            </Link>
+          </Section.Body>
+        </div>
+
+        <div className='py-6'>
+          <Section.Heading>Posts</Section.Heading>
+          <Section.Body>
+            {posts.map((post) => (
+              <Link href={`/posts/${post.slug}`} key={post.title}>
+                {post.title}
+              </Link>
+            ))}
+          </Section.Body>
         </div>
       </main>
     </Layout>

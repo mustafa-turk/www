@@ -2,11 +2,11 @@ import Head from "next/head";
 
 import Layout from "components/layout";
 import Link from "components/link";
+import Section from "components/section";
 import { TimelineEvent } from "components/timeline";
 
 import { getBookmarks } from "api/raindrop";
 import { getPosts } from "api/posts";
-import Section from "components/section";
 import Image from "next/image";
 
 export default function HomePage({ bookmarks, posts }) {
@@ -48,7 +48,13 @@ export default function HomePage({ bookmarks, posts }) {
           <Section.Heading>Personal Projects</Section.Heading>
           <Section.Body>
             <Link href='https://betterhackernews.com' target='_blank'>
-              <img src='/better-hn.png' width='100%' alt='better hacker news' />
+              <Image
+                src='/better-hn.png'
+                alt='better hacker news'
+                layout='responsive'
+                width='2029px'
+                height='1129px'
+              />
             </Link>
           </Section.Body>
         </div>

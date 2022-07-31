@@ -47,7 +47,7 @@ export default function HomePage() {
           <Section.Body>
             <Link href='https://betterhackernews.com' target='_blank'>
               <Image
-                src='/better-hn.png'
+                src='/better-hn.webp'
                 alt='better hacker news'
                 layout='responsive'
                 width='2029px'

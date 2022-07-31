@@ -3,7 +3,7 @@ function Section({ children }) {
 }
 
 function SectionHeading({ children }) {
-  return <h1 className='text-lg font-bold'>{children}</h1>;
+  return <h1 className='text-md'>{children}</h1>;
 }
 
 function SectionDescription({ children }) {

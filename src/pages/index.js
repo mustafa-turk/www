@@ -6,6 +6,8 @@ import { TimelineEvent } from "components/timeline";
 
 import { getBookmarks } from "api/raindrop";
 import { getPosts } from "api/posts";
+import Section from "components/section";
+import Image from "next/image";
 
 export default function HomePage({ bookmarks, posts }) {
   function linkify(href, description) {
@@ -22,7 +24,7 @@ export default function HomePage({ bookmarks, posts }) {
         <title>Mustafa Türk - Hello World</title>
       </Head>
 
-      <main className='grid divide-y divide-neutral-800'>
+      <main className='grid'>
         <div className='py-6'>
           <TimelineEvent active>
             <TimelineEvent.Title>Currently</TimelineEvent.Title>
@@ -40,6 +42,15 @@ export default function HomePage({ bookmarks, posts }) {
               Brussels.
             </TimelineEvent.Description>
           </TimelineEvent>
+        </div>
+
+        <div className='py-6'>
+          <Section.Heading>Personal Projects</Section.Heading>
+          <Section.Body>
+            <Link href='https://betterhackernews.com' target='_blank'>
+              <img src='/better-hn.png' width='100%' alt='better hacker news' />
+            </Link>
+          </Section.Body>
         </div>
       </main>
     </Layout>

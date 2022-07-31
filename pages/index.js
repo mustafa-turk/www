@@ -1,8 +1,6 @@
 import Head from "next/head";
 
-import Header from "components/Header";
 import Layout from "components/Layout";
-import Section from "components/Section";
 import Link from "components/Link";
 import { TimelineEvent } from "components/Timeline";
 
@@ -35,33 +33,13 @@ export default function HomePage({ bookmarks, posts }) {
             </TimelineEvent.Description>
           </TimelineEvent>
 
-          <TimelineEvent>
+          <TimelineEvent last>
             <TimelineEvent.Title>10/2019 - 03/2022</TimelineEvent.Title>
             <TimelineEvent.Description>
               Software Engineer at {linkify("https://www.skryv.com", "Skryv")},
               Brussels.
             </TimelineEvent.Description>
           </TimelineEvent>
-        </div>
-
-        <div className='py-6'>
-          <Section.Heading>Personal Projects</Section.Heading>
-          <Section.Body>
-            <Link href='https://betterhackernews.com' target='_blank'>
-              Better Hacker News
-            </Link>
-          </Section.Body>
-        </div>
-
-        <div className='py-6'>
-          <Section.Heading>Posts</Section.Heading>
-          <Section.Body>
-            {posts.map((post) => (
-              <Link href={`/posts/${post.slug}`} key={post.title}>
-                {post.title}
-              </Link>
-            ))}
-          </Section.Body>
         </div>
       </main>
     </Layout>
@@ -70,7 +48,6 @@ export default function HomePage({ bookmarks, posts }) {
 
 export async function getServerSideProps() {
   const bookmarks = await getBookmarks();
-
   const posts = getPosts();
 
   return {

@@ -3,15 +3,19 @@ function Section({ children }) {
 }
 
 function SectionHeading({ children }) {
-  return <h1 className="text-xl font-bold">{children}</h1>;
+  return <h1 className='text-lg font-bold'>{children}</h1>;
 }
 
 function SectionDescription({ children }) {
-  return <span className="text-md text-neutral-500">{children}</span>;
+  return <span className='text-md text-neutral-500'>{children}</span>;
 }
 
 function SectionBody({ children }) {
-  return <p className="text-md font-light flex flex-col gap-3 leading-6 mt-4">{children}</p>;
+  return (
+    <p className='text-md font-light flex flex-col gap-3 leading-6 mt-4'>
+      {children}
+    </p>
+  );
 }
 
 Section.Heading = SectionHeading;

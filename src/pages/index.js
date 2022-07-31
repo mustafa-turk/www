@@ -5,10 +5,9 @@ import Link from "components/link";
 import Section from "components/section";
 import { TimelineEvent } from "components/timeline";
 
-import { getPosts } from "api/posts";
 import Image from "next/image";
 
-export default function HomePage({ posts }) {
+export default function HomePage() {
   function linkify(href, description) {
     return (
       <Link href={href} inline target='_blank'>
@@ -60,14 +59,4 @@ export default function HomePage({ posts }) {
       </main>
     </Layout>
   );
-}
-
-export async function getServerSideProps() {
-  const posts = getPosts();
-
-  return {
-    props: {
-      posts,
-    },
-  };
 }

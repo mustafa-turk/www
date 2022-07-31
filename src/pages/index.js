@@ -1,8 +1,8 @@
 import Head from "next/head";
 
-import Layout from "components/Layout";
-import Link from "components/Link";
-import { TimelineEvent } from "components/Timeline";
+import Layout from "components/layout";
+import Link from "components/link";
+import { TimelineEvent } from "components/timeline";
 
 import { getBookmarks } from "api/raindrop";
 import { getPosts } from "api/posts";

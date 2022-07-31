@@ -6,8 +6,8 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeHighlight from "rehype-highlight";
 
-import Snippet from "components/Snippet";
-import Layout from "components/Layout";
+import Snippet from "components/snippet";
+import Layout from "components/layout";
 
 import { getPostFromSlug, getSlugs } from "api/posts";
 
@@ -15,11 +15,11 @@ import "highlight.js/styles/base16/black-metal.css";
 
 export default function PostPage({ post }) {
   return (
-    <Layout className="gap-8">
+    <Layout className='gap-8'>
       <Head>
         <title>{post.meta.title}</title>
       </Head>
-      <h1 className="text-xl font-bold">{post.meta.title}</h1>
+      <h1 className='text-xl font-bold'>{post.meta.title}</h1>
       <MDXRemote {...post.source} components={{ code: Snippet }} />
     </Layout>
   );
@@ -42,9 +42,9 @@ export const getStaticProps = async ({ params }) => {
     props: {
       post: {
         source,
-        meta
-      }
-    }
+        meta,
+      },
+    },
   };
 };
 

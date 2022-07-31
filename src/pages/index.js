@@ -5,11 +5,10 @@ import Link from "components/link";
 import Section from "components/section";
 import { TimelineEvent } from "components/timeline";
 
-import { getBookmarks } from "api/raindrop";
 import { getPosts } from "api/posts";
 import Image from "next/image";
 
-export default function HomePage({ bookmarks, posts }) {
+export default function HomePage({ posts }) {
   function linkify(href, description) {
     return (
       <Link href={href} inline target='_blank'>
@@ -64,12 +63,10 @@ export default function HomePage({ bookmarks, posts }) {
 }
 
 export async function getServerSideProps() {
-  const bookmarks = await getBookmarks();
   const posts = getPosts();
 
   return {
     props: {
-      bookmarks,
       posts,
     },
   };

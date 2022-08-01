@@ -1,13 +1,11 @@
+import classnames from "classnames";
+
 function Section({ children }) {
-  return <div>{children}</div>;
+  return <section className='py-6'>{children}</section>;
 }
 
-function SectionHeading({ children }) {
-  return <h1 className='text-md'>{children}</h1>;
-}
-
-function SectionDescription({ children }) {
-  return <span className='text-md text-neutral-500'>{children}</span>;
+function SectionHeading({ children, hidden }) {
+  return <h2 className={classnames("text-md", { hidden })}>{children}</h2>;
 }
 
 function SectionBody({ children }) {
@@ -20,6 +18,5 @@ function SectionBody({ children }) {
 
 Section.Heading = SectionHeading;
 Section.Body = SectionBody;
-Section.Description = SectionDescription;
 
 export default Section;

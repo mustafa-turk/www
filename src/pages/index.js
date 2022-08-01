@@ -22,8 +22,9 @@ export default function HomePage() {
         <title>Mustafa Türk - Hello World</title>
       </Head>
 
-      <main className='grid'>
-        <div className='py-6'>
+      <main>
+        <Section>
+          <Section.Heading hidden>Timeline</Section.Heading>
           <TimelineEvent active>
             <TimelineEvent.Title>Currently</TimelineEvent.Title>
             <TimelineEvent.Description>
@@ -40,9 +41,9 @@ export default function HomePage() {
               Brussels.
             </TimelineEvent.Description>
           </TimelineEvent>
-        </div>
+        </Section>
 
-        <div className='py-6'>
+        <Section>
           <Section.Heading>Personal Projects</Section.Heading>
           <Section.Body>
             <Link href='https://betterhackernews.com' target='_blank'>
@@ -55,7 +56,7 @@ export default function HomePage() {
               />
             </Link>
           </Section.Body>
-        </div>
+        </Section>
       </main>
     </Layout>
   );

@@ -6,6 +6,7 @@ import Section from "components/section";
 import { TimelineEvent } from "components/timeline";
 
 import Image from "next/image";
+import ExternalLinkButton from "components/external-link-button";
 
 export default function HomePage() {
   function linkify(href, description) {
@@ -54,6 +55,7 @@ export default function HomePage() {
                 width='2029px'
                 height='1129px'
               />
+              <ExternalLinkButton>Open website</ExternalLinkButton>
             </Link>
           </Section.Body>
         </Section>

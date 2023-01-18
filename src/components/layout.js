@@ -8,7 +8,7 @@ export default function Layout({ children, className }) {
       {children}
 
       <footer className='text-center text-neutral-500 text-sm'>
-        © 2022 Mustafa Türk
+        © 2023 Mustafa Türk
       </footer>
     </div>
   );

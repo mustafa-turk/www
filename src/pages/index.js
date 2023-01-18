@@ -25,6 +25,14 @@ export default function HomePage() {
 
       <main>
         <Section>
+          <Section.Heading hidden>About me</Section.Heading>
+          <Section.Body>
+            A Software Engineer with more than 3 years of professional and
+            industry experience building high quality web applications.
+          </Section.Body>
+        </Section>
+
+        <Section>
           <Section.Heading hidden>Timeline</Section.Heading>
           <TimelineEvent active>
             <TimelineEvent.Title>Currently</TimelineEvent.Title>

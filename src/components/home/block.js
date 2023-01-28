@@ -1,6 +1,6 @@
 import Link from "components/common/link";
 
-export default function Block({ metadata, children, href }) {
+export default function Block({ children, href }) {
   return (
     <Link
       href={href}

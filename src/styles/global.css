@@ -20,15 +20,8 @@ html {
 header,
 main,
 footer {
-  animation: fade 1s linear;
+  animation: fade 0.5s linear;
   animation-fill-mode: both;
-}
-
-main {
-  animation-delay: 0.3s;
-}
-footer {
-  animation-delay: 0.5s;
 }
 
 @font-face {

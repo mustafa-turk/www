@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { MDXProvider } from "@mdx-js/react";
 import { Heading, SubHeading, UnorderedList } from "components/writings";
 
@@ -15,12 +16,24 @@ export default function SubLayout({ children, metadata }) {
   return (
     <Layout>
       <MDXProvider components={components}>
-        <div className='text-center'>
+        <motion.div
+          transition={{ delay: 0.3 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className='text-center'
+        >
           <h1 className='text-xl'>{title}</h1>
           <span className='text-neutral-600 text-sm'>{date}</span>
-        </div>
+        </motion.div>
 
-        <main className='text-neutral-400'>{children}</main>
+        <motion.main
+          transition={{ delay: 0.6 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className='text-neutral-400'
+        >
+          {children}
+        </motion.main>
       </MDXProvider>
     </Layout>
   );

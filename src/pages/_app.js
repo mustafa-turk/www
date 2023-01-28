@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 
 import "styles/reset.css";
 import "styles/global.css";
@@ -13,6 +14,7 @@ export default function CustomApp({ Component, pageProps }) {
         <meta httpEquiv='X-UA-Compatible' content='ie=edge' />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }

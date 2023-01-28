@@ -67,11 +67,19 @@ export default function HomePage() {
         <Section index={4}>
           <Section.Heading>Personal Projects</Section.Heading>
           <Section.Body>
+            <Link href='https://where-next-one.vercel.app' target='_blank'>
+              <Image
+                src='/where-to-go.webp'
+                alt='where to go app'
+                width={2029}
+                height={1129}
+              />
+              <ExternalLinkButton>Open website</ExternalLinkButton>
+            </Link>
             <Link href='https://betterhackernews.com' target='_blank'>
               <Image
                 src='/better-hn.webp'
                 alt='better hacker news'
-                layout='responsive'
                 width={2029}
                 height={1129}
               />

@@ -1,8 +1,8 @@
 import Header from "./header";
 
-export default function Layout({ children, className }) {
+export default function Layout({ children }) {
   return (
-    <div className='flex flex-col gap-16 max-w-2xl p-5 mx-auto mt-6'>
+    <div className='flex flex-col gap-12 max-w-2xl p-5 mx-auto mt-6'>
       <Header />
 
       {children}

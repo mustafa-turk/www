@@ -1,0 +1,27 @@
+import Layout from "components/sub-layout";
+
+export const metadata = {
+  title: "Writing One Pagers as a Software Engineer",
+  date: "01/01/2023",
+};
+
+## What are one pagers in software engineering?
+
+One pagers in software engineering are short documents that provide a high-level overview of a specific feature or project.
+
+&nbsp;
+
+They are used to communicate the key details of the feature or project to stakeholders, such as project managers, business analysts, and other engineers.
+
+## How to write a good one pager?
+
+- Feature goal: a brief statement that describes the purpose of the feature and the problem it aims to solve.
+- Scope: a description of the feature's boundaries, including what is and is not included in the scope of the feature.
+- Design: a high-level description of the proposed solution, including any key architectural decisions and diagrams that help explain the design.
+- Implementation plan: a summary of the steps that will be taken to implement the feature, including any dependencies or constraints that must be taken into account.
+- Stakeholders: a list of the people or teams who will be impacted by the feature and their roles in the development process.
+- Timeline: an estimation of the feature development time.
+
+export default ({ children }) => (
+  <Layout metadata={metadata}>{children}</Layout>
+);

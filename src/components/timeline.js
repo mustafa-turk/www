@@ -3,12 +3,10 @@ import classNames from "classnames";
 function TimelineEvent({ active, children, last }) {
   return (
     <div
-      className={classNames(
-        "flex justify-start gap-6 pb-16 border-neutral-800",
-        {
-          "border-l": !last,
-        }
-      )}
+      className={classNames("flex justify-start gap-6 border-neutral-800", {
+        "border-l": !last,
+        "pb-16": !last,
+      })}
     >
       <div className='relative'>
         <div

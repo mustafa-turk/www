@@ -1,7 +1,17 @@
 import classnames from "classnames";
+import { motion } from "framer-motion";
 
-function Section({ children }) {
-  return <section className='py-6'>{children}</section>;
+function Section({ children, index = 1 }) {
+  return (
+    <motion.section
+      transition={{ delay: 0.3 * index }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className='flex flex-col py-6 gap-4'
+    >
+      {children}
+    </motion.section>
+  );
 }
 
 function SectionHeading({ children, hidden }) {
@@ -10,7 +20,7 @@ function SectionHeading({ children, hidden }) {
 
 function SectionBody({ children }) {
   return (
-    <p className='text-md font-light flex flex-col gap-3 leading-6 mt-4'>
+    <p className='font-light text-neutral-400 flex flex-col gap-3 leading-6'>
       {children}
     </p>
   );

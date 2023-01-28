@@ -22,6 +22,10 @@ html {
   animation-fill-mode: both;
 }
 
+body {
+  background: #000;
+}
+
 @font-face {
   font-family: "Untitled Sans";
   font-style: normal;

@@ -1,6 +1,6 @@
 function Heading({ children }) {
   return (
-    <h2 className='mt-12 first:mt-0 mb-4 text-lg text-neutral-300'>
+    <h2 className='mt-10 first:mt-0 mb-4 text-lg text-neutral-300'>
       {children}
     </h2>
   );

@@ -1,4 +1,4 @@
-import { ExternalLink } from "./icon";
+import { ExternalLink } from "../common/icon";
 
 export default function ExternalLinkButton({ children }) {
   return (

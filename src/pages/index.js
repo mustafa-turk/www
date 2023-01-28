@@ -1,13 +1,12 @@
 import Head from "next/head";
-
 import Image from "next/image";
 
-import Block from "components/block";
-import Layout from "components/layout";
-import Link from "components/link";
-import Section from "components/section";
-import ExternalLinkButton from "components/external-link-button";
-import { TimelineEvent } from "components/timeline";
+import Link from "components/common/link";
+import Block from "components/home/block";
+import Layout from "components/home/layout";
+import Section from "components/home/section";
+import ExternalLinkButton from "components/home/external-link-button";
+import { TimelineEvent } from "components/home/timeline";
 
 export default function HomePage() {
   function linkify(href, description) {

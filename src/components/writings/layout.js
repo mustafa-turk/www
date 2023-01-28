@@ -1,7 +1,7 @@
 import { MDXProvider } from "@mdx-js/react";
-import { Heading, SubHeading, UnorderedList } from "components/blog-components";
+import { Heading, SubHeading, UnorderedList } from "components/writings";
 
-import Layout from "components/layout";
+import Layout from "components/home/layout";
 
 const components = {
   h2: Heading,

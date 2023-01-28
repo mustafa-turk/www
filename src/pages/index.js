@@ -6,7 +6,7 @@ import Block from "components/home/block";
 import Layout from "components/home/layout";
 import Section from "components/home/section";
 import ExternalLinkButton from "components/home/external-link-button";
-import { TimelineEvent } from "components/home/timeline";
+import { Timeline, TimelineEvent } from "components/home/timeline";
 
 export default function HomePage() {
   function linkify(href, description) {
@@ -34,22 +34,25 @@ export default function HomePage() {
 
         <Section index={2}>
           <Section.Heading hidden>Timeline</Section.Heading>
-          <TimelineEvent active>
-            <TimelineEvent.Title>Currently</TimelineEvent.Title>
-            <TimelineEvent.Description>
-              Software Engineer at {linkify("https://www.box.com/home", "Box")},
-              Amsterdam. Building{" "}
-              {linkify("https://www.box.com/en-nl/esignature", "Box Sign")}.
-            </TimelineEvent.Description>
-          </TimelineEvent>
+          <Timeline>
+            <TimelineEvent active>
+              <TimelineEvent.Title>Currently</TimelineEvent.Title>
+              <TimelineEvent.Description>
+                Software Engineer at{" "}
+                {linkify("https://www.box.com/home", "Box")}, Amsterdam.
+                Building{" "}
+                {linkify("https://www.box.com/en-nl/esignature", "Box Sign")}.
+              </TimelineEvent.Description>
+            </TimelineEvent>
 
-          <TimelineEvent last>
-            <TimelineEvent.Title>10/2019 - 03/2022</TimelineEvent.Title>
-            <TimelineEvent.Description>
-              Software Engineer at {linkify("https://www.skryv.com", "Skryv")},
-              Brussels.
-            </TimelineEvent.Description>
-          </TimelineEvent>
+            <TimelineEvent last>
+              <TimelineEvent.Title>10/2019 - 03/2022</TimelineEvent.Title>
+              <TimelineEvent.Description>
+                Software Engineer at {linkify("https://www.skryv.com", "Skryv")}
+                , Brussels.
+              </TimelineEvent.Description>
+            </TimelineEvent>
+          </Timeline>
         </Section>
 
         <Section index={3}>

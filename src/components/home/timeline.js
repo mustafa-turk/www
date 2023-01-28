@@ -1,5 +1,9 @@
 import classNames from "classnames";
 
+function Timeline({ children }) {
+  return <div>{children}</div>;
+}
+
 function TimelineEvent({ active, children, last }) {
   return (
     <div
@@ -45,4 +49,4 @@ function TimelineEventDescription({ children }) {
 TimelineEvent.Title = TimelineEventTitle;
 TimelineEvent.Description = TimelineEventDescription;
 
-export { TimelineEvent };
+export { Timeline, TimelineEvent };

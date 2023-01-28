@@ -3,6 +3,7 @@ import { MDXProvider } from "@mdx-js/react";
 import { Heading, SubHeading, UnorderedList } from "components/writings";
 
 import Layout from "components/home/layout";
+import Head from "next/head";
 
 const components = {
   h2: Heading,
@@ -15,6 +16,9 @@ export default function SubLayout({ children, metadata }) {
 
   return (
     <Layout>
+      <Head>
+        <title>Mustafa Türk - {title}</title>
+      </Head>
       <MDXProvider components={components}>
         <motion.div
           transition={{ delay: 0.3 }}

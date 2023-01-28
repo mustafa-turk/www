@@ -17,9 +17,7 @@ html {
   }
 }
 
-header,
-main,
-footer {
+html {
   animation: fade 0.5s linear;
   animation-fill-mode: both;
 }

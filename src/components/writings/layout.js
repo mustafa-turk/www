@@ -24,7 +24,7 @@ export default function SubLayout({ children, metadata }) {
           transition={{ delay: 0.3 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className='text-center'
+          className='text-center mt-5'
         >
           <h1 className='text-xl'>{title}</h1>
           <span className='text-neutral-600 text-sm'>{date}</span>

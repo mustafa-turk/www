@@ -1,11 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
 
 import Link from "components/common/link";
 import Block from "components/home/block";
 import Layout from "components/home/layout";
 import Section from "components/home/section";
-import ExternalLinkButton from "components/home/external-link-button";
+import ExternalImage from "components/home/external-image";
 import { Timeline, TimelineEvent } from "components/home/timeline";
 
 export default function HomePage() {
@@ -67,24 +66,16 @@ export default function HomePage() {
         <Section index={4}>
           <Section.Heading>Personal Projects</Section.Heading>
           <Section.Body>
-            <Link href='https://where-next-one.vercel.app' target='_blank'>
-              <Image
-                src='/where-to-go.webp'
-                alt='where to go app'
-                width={2029}
-                height={1129}
-              />
-              <ExternalLinkButton>Open website</ExternalLinkButton>
-            </Link>
-            <Link href='https://betterhackernews.com' target='_blank'>
-              <Image
-                src='/better-hn.webp'
-                alt='better hacker news'
-                width={2029}
-                height={1129}
-              />
-              <ExternalLinkButton>Open website</ExternalLinkButton>
-            </Link>
+            <ExternalImage
+              appUrl='https://where-next-one.vercel.app'
+              imgSrc='/where-to-go.webp'
+              sourceUrl='https://github.com/mustafa-turk/where-next'
+            />
+            <ExternalImage
+              appUrl='https://betterhackernews.com'
+              imgSrc='/better-hn.webp'
+              sourceUrl='https://github.com/mustafa-turk/better-hacker-news'
+            />
           </Section.Body>
         </Section>
       </main>

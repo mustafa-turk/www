@@ -54,15 +54,6 @@ export default function HomePage() {
           </Timeline>
         </Section>
 
-        <Section index={3}>
-          <Section.Heading>Writings</Section.Heading>
-          <Section.Body>
-            <Block metadata='2023' href='/writings/writing-one-pagers'>
-              Writing One Pagers
-            </Block>
-          </Section.Body>
-        </Section>
-
         <Section index={4}>
           <Section.Heading>Personal Projects</Section.Heading>
           <Section.Body>

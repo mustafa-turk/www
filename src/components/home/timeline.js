@@ -17,7 +17,7 @@ function TimelineEvent({ active, children, last }) {
           className={classNames(
             "absolute top-0 left-[-8px] w-4 h-4 rounded-full aspect-square outline-black",
             {
-              "bg-green-300": active,
+              "bg-neutral-400": active,
               "bg-neutral-800": !active,
               "w-3 h-3": !active,
               "left-[-6px]": !active,
@@ -27,7 +27,7 @@ function TimelineEvent({ active, children, last }) {
           {active && (
             <div
               className={classNames(
-                "absolute top-0 left-0 rounded-full -z-10 w-4 h-4 bg-green-300 animate-ping aspect-square"
+                "absolute top-0 left-0 rounded-full -z-10 w-4 h-4 bg-neutral-400 animate-ping aspect-square"
               )}
             />
           )}

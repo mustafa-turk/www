@@ -15,19 +15,19 @@ function TimelineEvent({ active, children, last }) {
       <div className='relative'>
         <div
           className={classNames(
-            "absolute top-0 left-[-8px] w-4 h-4 rounded-full aspect-square outline-black",
+            "absolute top-[-2px] left-[-8.5px] w-4 h-4 rounded-full aspect-square outline-black",
             {
-              "bg-neutral-400": active,
+              "bg-emerald-500": active,
               "bg-neutral-800": !active,
               "w-3 h-3": !active,
-              "left-[-6px]": !active,
+              "left-[-5.5px]": !active,
             }
           )}
         >
           {active && (
             <div
               className={classNames(
-                "absolute top-0 left-0 rounded-full -z-10 w-4 h-4 bg-neutral-400 animate-ping aspect-square"
+                "absolute top-0 left-0 rounded-full -z-10 w-4 h-4 bg-emerald-500 animate-ping aspect-square"
               )}
             />
           )}

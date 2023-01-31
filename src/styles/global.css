@@ -17,13 +17,10 @@ html {
   }
 }
 
-html {
-  animation: fade 0.5s linear;
-  animation-fill-mode: both;
-}
-
 body {
   background: #000;
+  animation: fade 0.5s linear;
+  animation-fill-mode: both;
 }
 
 @font-face {

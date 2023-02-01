@@ -58,7 +58,7 @@ export default function HomePage() {
           <Section.Heading>Personal Projects</Section.Heading>
           <Section.Body>
             <ExternalImage
-              appUrl='https://where-next-one.vercel.app'
+              appUrl='https://wherenext.app'
               imgSrc='/where-to-go.webp'
               sourceUrl='https://github.com/mustafa-turk/where-next'
             />
@@ -66,6 +66,10 @@ export default function HomePage() {
               appUrl='https://betterhackernews.com'
               imgSrc='/better-hn.webp'
               sourceUrl='https://github.com/mustafa-turk/better-hacker-news'
+            />
+            <ExternalImage
+              appUrl='https://macosicons.com/#/u/mustafaturk'
+              imgSrc='/gh-replacement-icon.webp'
             />
           </Section.Body>
         </Section>

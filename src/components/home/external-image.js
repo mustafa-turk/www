@@ -15,17 +15,19 @@ function ExternalImage({ sourceUrl, imgSrc, appUrl }) {
       />
       <div className='flex gap-2'>
         <Link href={appUrl} target='_blank'>
-          <button className='outline outline-neutral-800 hover:bg-neutral-800 transition bg-neutral-900 rounded-lg text-neutral-400 flex justify-center items-center px-4 gap-2 text-md'>
+          <button className='border border-neutral-800 hover:bg-neutral-800 transition bg-neutral-900 rounded-lg text-neutral-400 flex justify-center items-center px-4 py-1 gap-2 text-sm'>
             <span>Open</span>
             <ExternalLink />
           </button>
         </Link>
-        <Link href={sourceUrl} target='_blank'>
-          <button className='outline outline-neutral-800 hover:bg-neutral-900 rounded-lg text-neutral-400 flex justify-center items-center px-4 gap-2 text-md'>
-            <span>Source</span>
-            <CodeIcon />
-          </button>
-        </Link>
+        {sourceUrl && (
+          <Link href={sourceUrl} target='_blank'>
+            <button className='border border-neutral-800 hover:bg-neutral-900 rounded-lg text-neutral-400 flex justify-center items-center px-4 gap-2 text-sm py-1'>
+              <span>Source</span>
+              <CodeIcon />
+            </button>
+          </Link>
+        )}
       </div>
     </div>
   );

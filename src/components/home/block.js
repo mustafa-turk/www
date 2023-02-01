@@ -1,12 +1,14 @@
 import Link from "components/common/link";
+import { ArrowRightIcon } from "components/common/icon";
 
 export default function Block({ children, href }) {
   return (
     <Link
       href={href}
-      className='flex justify-between align-center py-3 px-4 bg-neutral-900 hover:bg-neutral-800 rounded-lg text-neutral-400 transition-colors'
+      className='flex justify-between items-center py-3 px-4 border border-neutral-900 hover:bg-neutral-900/50 rounded-lg text-neutral-400 transition-colors'
     >
       <span>{children}</span>
+      <ArrowRightIcon size='26' />
     </Link>
   );
 }

@@ -63,11 +63,6 @@ export default function HomePage() {
               sourceUrl='https://github.com/mustafa-turk/where-next'
             />
             <ExternalImage
-              appUrl='https://betterhackernews.com'
-              imgSrc='/better-hn.webp'
-              sourceUrl='https://github.com/mustafa-turk/better-hacker-news'
-            />
-            <ExternalImage
               appUrl='https://macosicons.com/#/u/mustafaturk'
               imgSrc='/gh-replacement-icon.webp'
             />

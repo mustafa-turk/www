@@ -3,7 +3,6 @@ function Link({ href, children, inline, ...props }) {
     <a
       className={`${inline ? "inline" : "block"} text-neutral-200 relative`}
       href={href}
-      inline={inline}
       rel='noreferrer'
       {...props}
     >

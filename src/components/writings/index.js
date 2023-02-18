@@ -14,4 +14,16 @@ function UnorderedList({ children }) {
   return <ul className='list-disc ml-3 flex space-y-2 flex-col'>{children}</ul>;
 }
 
-export { Heading, SubHeading, UnorderedList };
+const CodeBlock = ({ children }) => {
+  return (
+    <pre className='my-4 p-4 border border-neutral-800 rounded-lg overflow-scroll'>
+      {children}
+    </pre>
+  );
+};
+
+const Code = ({ children }) => {
+  return <code className='text-sm'>{children}</code>;
+};
+
+export { Heading, SubHeading, UnorderedList, CodeBlock, Code };

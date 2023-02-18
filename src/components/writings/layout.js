@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import { MDXProvider } from "@mdx-js/react";
-import { Heading, SubHeading, UnorderedList } from "components/writings";
+import {
+  Heading,
+  SubHeading,
+  UnorderedList,
+  CodeBlock,
+} from "components/writings";
 
 import Layout from "components/home/layout";
 import Head from "next/head";
@@ -9,6 +14,7 @@ const components = {
   h2: Heading,
   h3: SubHeading,
   ul: UnorderedList,
+  pre: CodeBlock,
 };
 
 export default function SubLayout({ children, metadata }) {
@@ -24,7 +30,7 @@ export default function SubLayout({ children, metadata }) {
           transition={{ delay: 0.3 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className='text-center mt-5'
+          className='mt-5'
         >
           <h1 className='text-xl'>{title}</h1>
           <span className='text-neutral-600 text-sm'>{date}</span>

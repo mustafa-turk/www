@@ -65,7 +65,7 @@ In this function, we are first checking if the key from the config we have passe
 The final code will look like the following:
 
 ```js
-import accounts from "@/path-to-json-file";
+import accountTypes from "@/path-to-json-file";
 
 const KeysToComponentMap = {
   twitter: TwitterIcon,
@@ -85,8 +85,8 @@ const MyComponent = () => {
   return (
     <div>
       {
-        accounts.map((account) => {
-          return renderer(link);
+        accountTypes.map((type) => {
+          return renderer(type);
         });
       }
     </div>

@@ -54,18 +54,6 @@ export default function HomePage() {
           </Timeline>
         </Section>
 
-        <Section index={3}>
-          <Section.Heading>Writings</Section.Heading>
-          <Section.Body>
-            <Block
-              metadata='2023'
-              href='/writings/creating-dynamic-react-components'
-            >
-              Creating Components Dynamically
-            </Block>
-          </Section.Body>
-        </Section>
-
         <Section index={4}>
           <Section.Heading>Personal Projects</Section.Heading>
           <Section.Body>

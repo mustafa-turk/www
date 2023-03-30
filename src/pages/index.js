@@ -74,10 +74,6 @@ export default function HomePage() {
               imgSrc='/where-to-go.webp'
               sourceUrl='https://github.com/mustafa-turk/where-next'
             />
-            <ExternalImage
-              appUrl='https://macosicons.com/#/u/mustafaturk'
-              imgSrc='/gh-replacement-icon.webp'
-            />
           </Section.Body>
         </Section>
       </main>

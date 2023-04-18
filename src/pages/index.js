@@ -26,8 +26,8 @@ export default function HomePage() {
         <Section index={1}>
           <Section.Heading hidden>About me</Section.Heading>
           <Section.Body>
-            A Software Engineer with more than 3 years of professional and
-            industry experience building high quality web applications.
+            A Software Engineer with more than 4 years of industry experience
+            building high quality web applications.
           </Section.Body>
         </Section>
 
@@ -57,6 +57,12 @@ export default function HomePage() {
         <Section index={4}>
           <Section.Heading>Personal Projects</Section.Heading>
           <Section.Body>
+            <ExternalImage
+              isComingSoon
+              appUrl='https://apps.apple.com/us/app/gmail-email-by-google/id422689480'
+              imgSrc='/today.webp'
+              sourceUrl='https://github.com/mustafa-turk/today'
+            />
             <ExternalImage
               appUrl='https://wherenext.app'
               imgSrc='/where-to-go.webp'

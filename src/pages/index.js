@@ -58,8 +58,7 @@ export default function HomePage() {
           <Section.Heading>Personal Projects</Section.Heading>
           <Section.Body>
             <ExternalImage
-              isComingSoon
-              appUrl='https://apps.apple.com/us/app/gmail-email-by-google/id422689480'
+              appUrl='https://apps.apple.com/be/app/calendio/id6447790237'
               imgSrc='/today.webp'
               sourceUrl='https://github.com/mustafa-turk/today'
             />

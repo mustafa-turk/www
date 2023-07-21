@@ -61,11 +61,15 @@ export default function HomePage() {
               appUrl='https://apps.apple.com/be/app/calendio/id6447790237'
               imgSrc='/today.webp'
               sourceUrl='https://github.com/mustafa-turk/today'
+              title='Calendio'
+              description='A simple, minimalistic and clutter-free calendar app.'
             />
             <ExternalImage
               appUrl='https://wherenext.app'
               imgSrc='/where-to-go.webp'
               sourceUrl='https://github.com/mustafa-turk/where-next'
+              title='Next'
+              description='Destination suggestions based on your past country visits.'
             />
           </Section.Body>
         </Section>

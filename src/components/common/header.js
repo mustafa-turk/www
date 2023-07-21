@@ -15,7 +15,7 @@ export default function Header() {
         </a>
 
         <a
-          href='https://www.linkedin.com/in/mustafa-t%C3%BCrk-92b363171/'
+          href='https://www.linkedin.com/in/mtafaturk/'
           target='_blank'
           rel='noreferrer'
         >

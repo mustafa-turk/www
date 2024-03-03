@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   @apply text-neutral-300;
   @apply bg-black;

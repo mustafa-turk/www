@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 import Link from "components/common/link";
-import Block from "components/home/block";
 import Layout from "components/home/layout";
 import Section from "components/home/section";
 import ExternalImage from "components/home/external-image";
@@ -26,7 +25,7 @@ export default function HomePage() {
         <Section index={1}>
           <Section.Heading hidden>About me</Section.Heading>
           <Section.Body>
-            A Software Engineer with more than 4 years of industry experience
+            Software Engineer with more than 5 years of industry experience
             building high quality web applications.
           </Section.Body>
         </Section>
@@ -63,13 +62,6 @@ export default function HomePage() {
               sourceUrl='https://github.com/mustafa-turk/today'
               title='Calendio'
               description='A simple, minimalistic and clutter-free calendar app.'
-            />
-            <ExternalImage
-              appUrl='https://wherenext.app'
-              imgSrc='/where-to-go.webp'
-              sourceUrl='https://github.com/mustafa-turk/where-next'
-              title='Next'
-              description='Destination suggestions based on your past country visits.'
             />
           </Section.Body>
         </Section>

@@ -57,10 +57,17 @@ export default function HomePage() {
           <Section.Heading>Personal Projects</Section.Heading>
           <Section.Body>
             <ExternalImage
+              appUrl='https://secret.mustafaturk.com'
+              imgSrc='/secret.webp'
+              sourceUrl='https://github.com/mustafa-turk/secret'
+              title='Secret'
+              description='A simple, minimalistic and clutter-free password generator.'
+            />
+            <ExternalImage
               appUrl='https://apps.apple.com/be/app/calendio/id6447790237'
               imgSrc='/today.webp'
               sourceUrl='https://github.com/mustafa-turk/today'
-              title='Calendio'
+              title='Today'
               description='A simple, minimalistic and clutter-free calendar app.'
             />
           </Section.Body>

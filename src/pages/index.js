@@ -34,7 +34,7 @@ export default function HomePage() {
           <Section.Heading hidden>Timeline</Section.Heading>
           <Timeline>
             <TimelineEvent active>
-              <TimelineEvent.Title>Currently</TimelineEvent.Title>
+              <TimelineEvent.Title>2022 — Currently</TimelineEvent.Title>
               <TimelineEvent.Description>
                 Software Engineer at{" "}
                 {linkify("https://www.box.com/home", "Box")}, Amsterdam.
@@ -44,7 +44,7 @@ export default function HomePage() {
             </TimelineEvent>
 
             <TimelineEvent last>
-              <TimelineEvent.Title>10/2019 - 03/2022</TimelineEvent.Title>
+              <TimelineEvent.Title>2019 — 2022</TimelineEvent.Title>
               <TimelineEvent.Description>
                 Software Engineer at {linkify("https://www.skryv.com", "Skryv")}
                 , Brussels.

@@ -14,13 +14,13 @@ export default function Header() {
           <GithubIcon size='20' />
         </a>
 
-        <a
+        {/* <a
           href='https://www.linkedin.com/in/mtafaturk/'
           target='_blank'
           rel='noreferrer'
         >
           <LinkedInIcon size='20' />
-        </a>
+        </a> */}
       </div>
     </header>
   );

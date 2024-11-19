@@ -30,7 +30,7 @@ export default function HomePage() {
           </Section.Body>
         </Section>
 
-        {/* <Section index={2}>
+        <Section index={2}>
           <Section.Heading hidden>Timeline</Section.Heading>
           <Timeline>
             <TimelineEvent active>
@@ -51,7 +51,7 @@ export default function HomePage() {
               </TimelineEvent.Description>
             </TimelineEvent>
           </Timeline>
-        </Section> */}
+        </Section>
 
         <Section index={4}>
           <Section.Heading>Personal Projects</Section.Heading>

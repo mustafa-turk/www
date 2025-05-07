@@ -6,7 +6,7 @@ export default function Layout({ children }) {
       <Header />
       {children}
       <footer className='text-center text-neutral-500 text-sm'>
-        © 2024 Mustafa Türk
+        © 2025 Mustafa Türk
       </footer>
     </div>
   );

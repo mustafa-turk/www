@@ -9,7 +9,7 @@ function TimelineEvent({ active, children, last }) {
     <div
       className={classNames("flex justify-start gap-6 border-neutral-800", {
         "border-l": !last,
-        "pb-12": !last,
+        "pb-16": !last,
       })}
     >
       <div className='relative'>
@@ -17,7 +17,7 @@ function TimelineEvent({ active, children, last }) {
           className={classNames(
             "absolute top-[-2px] left-[-8.5px] w-4 h-4 rounded-full aspect-square outline-black",
             {
-              "bg-red-500": active,
+              "bg-emerald-500": active,
               "bg-neutral-800": !active,
               "w-3 h-3": !active,
               "left-[-5.5px]": !active,
@@ -27,7 +27,7 @@ function TimelineEvent({ active, children, last }) {
           {active && (
             <div
               className={classNames(
-                "absolute top-0 left-0 rounded-full -z-10 w-4 h-4 bg-red-500 animate-ping aspect-square"
+                "absolute top-0 left-0 rounded-full -z-10 w-4 h-4 bg-emerald-500 animate-ping aspect-square"
               )}
             />
           )}

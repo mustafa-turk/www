@@ -61,18 +61,18 @@ export default function HomePage() {
               description='Create your social media bio with unique fonts.'
             />
             <ExternalImage
-              appUrl='https://secret.mustafaturk.com'
-              imgSrc='/secret.webp'
-              sourceUrl='https://github.com/mustafa-turk/secret'
-              title='Secret'
-              description='A simple, minimalistic and clutter-free password generator.'
-            />
-            <ExternalImage
               appUrl='https://apps.apple.com/be/app/calendio/id6447790237'
               imgSrc='/today.webp'
               sourceUrl='https://github.com/mustafa-turk/today'
-              title='Calend.io'
-              description='A simple, minimalistic and clutter-free calendar app.'
+              title='Calendio'
+              description='A simple, minimalistic and clutter-free iOS calendar app.'
+            />
+            <ExternalImage
+              appUrl='https://secret.mustafaturk.com'
+              imgSrc='/secret.webp'
+              sourceUrl='https://github.com/mustafa-turk/secret'
+              title='Pass'
+              description='A simple, minimalistic and clutter-free password generator.'
             />
           </Section.Body>
         </Section>

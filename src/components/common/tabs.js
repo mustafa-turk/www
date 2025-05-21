@@ -11,7 +11,7 @@ function Tabs({ activeTab }) {
 }
 
 function Tab({ title, onClick, isActive }) {
-    const classNames = `${isActive && "bg-neutral-900 border border-neutral-800"} hover:bg-neutral-900 focus:border-neutral-800 transition rounded-lg text-neutral-400 flex justify-center items-center px-4 py-2 gap-2 text-sm`
+    const classNames = `${isActive && "bg-neutral-900 border border-neutral-800"} focus:border-neutral-800 focus:outline-none focus:ring-0 hover:bg-neutral-900 border-neutral-800 transition rounded-lg text-neutral-400 flex justify-center items-center px-4 py-2 gap-2 text-sm`
     return (
     <button onClick={onClick} className={classNames}>
         <span>{title}</span>

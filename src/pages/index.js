@@ -62,7 +62,7 @@ export default function HomePage() {
             <Tabs activeTab={router.query.tab} />
           </Section.Heading>
           <Section.Body>
-            {!router.query.tab || router.query.tab === "products" && <>
+            {(!router.query.tab || router.query.tab === "products") && <>
               <ExternalImage
                 appUrl='https://fontara.xyz'
                 imgSrc='/bio.webp'
@@ -90,6 +90,12 @@ export default function HomePage() {
                 imgSrc='/mandalina.webp'
                 title='Mandalina'
                 description='Interactive menu for Mandalina restaurant'
+              />
+              <ExternalImage
+                appUrl='https://makas-eosin.vercel.app/'
+                imgSrc='/band.webp'
+                title='Makas Band'
+                description='Promotion website for the Makas Band'
               />
             </>}
           </Section.Body>

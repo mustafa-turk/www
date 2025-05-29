@@ -13,13 +13,11 @@ export default function HomePage() {
 
   function linkify(href, description) {
     return (
-      <Link href={href} inline target='_blank'>
+      <Link href={href} inline target="_blank">
         {description}
       </Link>
     );
   }
-
-  console.log(router.query.tab)
 
   return (
     <Layout>
@@ -62,42 +60,46 @@ export default function HomePage() {
             <Tabs activeTab={router.query.tab} />
           </Section.Heading>
           <Section.Body>
-            {(!router.query.tab || router.query.tab === "products") && <>
-              <ExternalImage
-                appUrl='https://fontara.xyz'
-                imgSrc='/bio.webp'
-                title='Fontara'
-                description='Create your social media bio with unique fonts'
-              />
-              <ExternalImage
-                appUrl='https://secret.mustafaturk.com'
-                imgSrc='/secret.webp'
-                sourceUrl='https://github.com/mustafa-turk/secret'
-                title='Pass'
-                description='A simple, minimalistic and clutter-free password generator'
-              />
-              <ExternalImage
-                appUrl='https://apps.apple.com/be/app/calendio/id6447790237'
-                imgSrc='/today.webp'
-                sourceUrl='https://github.com/mustafa-turk/today'
-                title='Calendio'
-                description='A simple, minimalistic and clutter-free iOS calendar app'
-              />
-            </>}
-            {router.query.tab === "designs" && <>
-              <ExternalImage
-                appUrl='https://mandalina.be/menu-nl/index.html'
-                imgSrc='/mandalina.webp'
-                title='Mandalina'
-                description='Interactive menu for Mandalina restaurant'
-              />
-              <ExternalImage
-                appUrl='https://makas-eosin.vercel.app/'
-                imgSrc='/band.webp'
-                title='Makas Band'
-                description='Promotion website for the Makas Band'
-              />
-            </>}
+            {(!router.query.tab || router.query.tab === "products") && (
+              <>
+                <ExternalImage
+                  appUrl="https://secret.mustafaturk.com"
+                  imgSrc="/secret.webp"
+                  sourceUrl="https://github.com/mustafa-turk/secret"
+                  title="Secret"
+                  description="A simple, minimalistic and clutter-free password generator"
+                />
+                <ExternalImage
+                  appUrl="https://apps.apple.com/be/app/calendio/id6447790237"
+                  imgSrc="/today.webp"
+                  sourceUrl="https://github.com/mustafa-turk/today"
+                  title="Calendar"
+                  description="A simple, minimalistic and clutter-free iOS calendar app"
+                />
+                <ExternalImage
+                  appUrl="https://fontara.xyz"
+                  imgSrc="/bio.webp"
+                  title="Fontara"
+                  description="Create your social media bio with unique fonts"
+                />
+              </>
+            )}
+            {router.query.tab === "designs" && (
+              <>
+                <ExternalImage
+                  appUrl="https://mandalina.be/menu-nl/index.html"
+                  imgSrc="/mandalina.webp"
+                  title="Mandalina"
+                  description="Interactive menu for Mandalina restaurant"
+                />
+                <ExternalImage
+                  appUrl="https://makas-eosin.vercel.app/"
+                  imgSrc="/band.webp"
+                  title="Makas Band (Concept)"
+                  description="Promotion website for the Makas Band"
+                />
+              </>
+            )}
           </Section.Body>
         </Section>
       </main>

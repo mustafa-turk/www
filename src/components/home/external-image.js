@@ -5,30 +5,30 @@ import { CodeIcon, ExternalLink } from "components/common/icon";
 
 function ExternalImage({ sourceUrl, imgSrc, appUrl, title, description }) {
   return (
-    <div className='mb-4'>
-      <Link href={appUrl} target='_blank'>
+    <div className="mb-4">
+      <Link href={appUrl} target="_blank">
         <Image
           src={imgSrc}
-          alt='personal project'
+          alt="personal project"
           width={2029}
           height={1129}
-          className='mb-3'
+          className="mb-3"
         />
       </Link>
-      <div className='mb-2'>
-        <p className='text-neutral-300'>{title}</p>
+      <div className="mb-2">
+        <p className="text-neutral-300">{title}</p>
         <span>{description}</span>
       </div>
-      <div className='flex gap-2'>
-        <Link href={appUrl} target='_blank'>
-          <button className='border border-neutral-800 hover:bg-neutral-900 rounded-lg text-neutral-400 flex justify-center items-center px-4 gap-2 text-sm py-1'>
+      <div className="flex gap-2">
+        <Link href={appUrl} target="_blank">
+          <button className="border border-neutral-800 hover:bg-neutral-900 rounded-lg flex justify-center items-center px-4 gap-2 text-sm py-1 bg-neutral-900 text-neutral-400">
             <span>Open</span>
             <ExternalLink />
           </button>
         </Link>
         {sourceUrl && (
-          <Link href={sourceUrl} target='_blank'>
-            <button className='border border-neutral-800 hover:bg-neutral-900 rounded-lg text-neutral-400 flex justify-center items-center px-4 gap-2 text-sm py-1'>
+          <Link href={sourceUrl} target="_blank">
+            <button className="border border-neutral-800 hover:bg-neutral-900 rounded-lg text-neutral-400 flex justify-center items-center px-4 gap-2 text-sm py-1">
               <span>Source</span>
               <CodeIcon />
             </button>

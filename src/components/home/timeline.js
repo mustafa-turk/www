@@ -12,12 +12,12 @@ function TimelineEvent({ active, children, last }) {
         "pb-16": !last,
       })}
     >
-      <div className='relative'>
+      <div className="relative">
         <div
           className={classNames(
             "absolute top-[-2px] left-[-8.5px] w-4 h-4 rounded-full aspect-square outline-black",
             {
-              "bg-emerald-500": active,
+              "bg-neutral-400": active,
               "bg-neutral-800": !active,
               "w-3 h-3": !active,
               "left-[-5.5px]": !active,
@@ -27,23 +27,23 @@ function TimelineEvent({ active, children, last }) {
           {active && (
             <div
               className={classNames(
-                "absolute top-0 left-0 rounded-full -z-10 w-4 h-4 bg-emerald-500 animate-ping aspect-square"
+                "absolute top-0 left-0 rounded-full -z-10 w-4 h-4 bg-neutral-400 animate-ping aspect-square"
               )}
             />
           )}
         </div>
       </div>
-      <div className='mt-[-4px] flex flex-col gap-2'>{children}</div>
+      <div className="mt-[-4px] flex flex-col gap-2">{children}</div>
     </div>
   );
 }
 
 function TimelineEventTitle({ children }) {
-  return <p className='text-sm text-neutral-500'>{children}</p>;
+  return <p className="text-sm text-neutral-500">{children}</p>;
 }
 
 function TimelineEventDescription({ children }) {
-  return <p className='text-md text-neutral-400'>{children}</p>;
+  return <p className="text-md text-neutral-400">{children}</p>;
 }
 
 TimelineEvent.Title = TimelineEventTitle;

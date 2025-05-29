@@ -66,7 +66,7 @@ export default function HomePage() {
                   appUrl="https://secret.mustafaturk.com"
                   imgSrc="/secret.webp"
                   sourceUrl="https://github.com/mustafa-turk/secret"
-                  title="Secret"
+                  title="Pass"
                   description="A simple, minimalistic and clutter-free password generator"
                 />
                 <ExternalImage

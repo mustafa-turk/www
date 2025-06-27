@@ -63,7 +63,7 @@ export default function HomePage() {
             {(!router.query.tab || router.query.tab === "products") && (
               <>
                 <ExternalImage
-                  appUrl="https://secret.mustafaturk.com"
+                  appUrl="https://secret.mustafaturk.me"
                   imgSrc="/secret.webp"
                   sourceUrl="https://github.com/mustafa-turk/secret"
                   title="Pass"

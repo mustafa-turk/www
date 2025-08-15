@@ -34,27 +34,6 @@ export default function HomePage() {
           </Section.Body>
         </Section>
 
-        <Section index={2}>
-          <Section.Heading hidden>Timeline</Section.Heading>
-          <Timeline>
-            <TimelineEvent active>
-              <TimelineEvent.Title>2022 — Currently</TimelineEvent.Title>
-              <TimelineEvent.Description>
-                Amsterdam — Software Engineer at{" "}
-                {linkify("https://www.box.com/home", "Box")}.
-              </TimelineEvent.Description>
-            </TimelineEvent>
-
-            <TimelineEvent last>
-              <TimelineEvent.Title>2019 — 2022</TimelineEvent.Title>
-              <TimelineEvent.Description>
-                Brussels — Software Engineer at{" "}
-                {linkify("https://www.skryv.com", "Skryv")}.
-              </TimelineEvent.Description>
-            </TimelineEvent>
-          </Timeline>
-        </Section>
-
         <Section index={4}>
           <Section.Heading>
             <Tabs activeTab={router.query.tab} />

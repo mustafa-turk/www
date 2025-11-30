@@ -20,7 +20,7 @@ function SectionHeading({ children, hidden }) {
 
 function SectionBody({ children }) {
   return (
-    <p className='font-light text-neutral-400 flex flex-col gap-4 leading-6'>
+    <p className='font-light text-neutral-300 flex flex-col gap-4 leading-6'>
       {children}
     </p>
   );

@@ -1,12 +1,10 @@
-import Image from "next/image";
 import { GithubIcon, LinkedInIcon } from "./icon";
-import logo from "../../../public/logo.svg";
 
 export default function Header() {
   return (
     <header className="flex items-center justify-between">
       <a href="/">
-        <Image src={logo} width={140} alt="logo" className="opacity-70" />
+        <span className="font-mono text-sm text-neutral-300">Mustafa Türk</span>
       </a>
 
       <div className="flex items-center gap-3">
@@ -16,6 +14,9 @@ export default function Header() {
           rel="noreferrer"
         >
           <GithubIcon size="20" />
+        </a>
+        <a href="https://www.linkedin.com/in/mustafa-tk/" target="_blank" rel="noreferrer">
+          <LinkedInIcon size="20" />
         </a>
       </div>
     </header>

@@ -40,3 +40,10 @@ body {
   font-weight: 500;
   src: local(""), url("/src/assets/UntitledSans-Medium.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Geist Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/src/assets/GeistMono-Regular.ttf") format("ttf");
+}

@@ -17,7 +17,7 @@ function ExternalImage({ sourceUrl, imgSrc, appUrl, title, description }) {
       </Link>
       <div className="mb-2">
         <p className="text-neutral-300">{title}</p>
-        <span>{description}</span>
+        <span className="text-neutral-400">{description}</span>
       </div>
       <div className="flex gap-2">
         <Link href={appUrl} target="_blank">

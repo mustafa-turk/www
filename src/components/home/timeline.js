@@ -39,7 +39,7 @@ function TimelineEvent({ active, children, last }) {
 }
 
 function TimelineEventTitle({ children }) {
-  return <p className="text-xs text-neutral-400 font-mono">{children}</p>;
+  return <p className="text-xs text-neutral-400">{children}</p>;
 }
 
 function TimelineEventDescription({ label, children }) {

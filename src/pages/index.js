@@ -19,7 +19,7 @@ export default function HomePage() {
             Based in Netherlands, I’m a frontend-focused Software Engineer based with 6+ years of experience building high quality web applications.
             <br />
             <br />
-            I’ve previously worked at fast-moving startups and large, product-driven tech companies where working with globally distributed teams, engineering at scale, and building reliable, polished software and interfaces all come together.
+            I’ve previously worked at fast-moving startups and large, product-driven tech companies where working with globally distributed teams, engineering at scale, and building reliable software and accessible interfaces all come together.
           </Section.Body>
         </Section>
 

@@ -7,7 +7,7 @@ function Section({ children, index = 1 }) {
       transition={{ delay: 0.3 * index }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className='flex flex-col py-6 gap-4'
+      className='flex flex-col py-8 gap-4'
     >
       {children}
     </motion.section>

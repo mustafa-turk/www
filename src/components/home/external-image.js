@@ -21,14 +21,14 @@ function ExternalImage({ sourceUrl, imgSrc, appUrl, title, description }) {
       </div>
       <div className="flex gap-2">
         <Link href={appUrl} target="_blank">
-          <button className="border border-neutral-800 hover:bg-neutral-900 rounded-lg flex justify-center items-center px-4 gap-2 text-sm py-1 bg-neutral-900 text-neutral-400">
+          <button className="border border-neutral-800 hover:bg-neutral-400 rounded-lg flex justify-center items-center px-4 gap-2 text-sm py-1 bg-neutral-300 text-neutral-900 transition-all">
             <span>Open</span>
             <ExternalLink />
           </button>
         </Link>
         {sourceUrl && (
           <Link href={sourceUrl} target="_blank">
-            <button className="border border-neutral-800 hover:bg-neutral-900 rounded-lg text-neutral-400 flex justify-center items-center px-4 gap-2 text-sm py-1">
+            <button className="border border-neutral-800 hover:bg-neutral-900 rounded-lg text-neutral-400 flex justify-center items-center px-4 gap-2 text-sm py-1 transition-all">
               <span>Source</span>
               <CodeIcon />
             </button>

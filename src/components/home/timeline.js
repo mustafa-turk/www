@@ -17,7 +17,7 @@ function TimelineEvent({ active, children, last }) {
           className={classNames(
             "absolute top-[-2px] left-[-8.5px] w-4 h-4 rounded-full aspect-square outline-black",
             {
-              "bg-cyan-400": active,
+              "bg-neutral-400": active,
               "bg-neutral-800": !active,
               "w-3 h-3": !active,
               "left-[-5.5px]": !active,
@@ -27,7 +27,7 @@ function TimelineEvent({ active, children, last }) {
           {active && (
             <div
               className={classNames(
-                "absolute top-0 left-0 rounded-full -z-10 w-4 h-4 bg-cyan-200 animate-ping aspect-square"
+                "absolute top-0 left-0 rounded-full -z-10 w-4 h-4 bg-neutral-200 animate-ping aspect-square"
               )}
             />
           )}
@@ -39,14 +39,13 @@ function TimelineEvent({ active, children, last }) {
 }
 
 function TimelineEventTitle({ children }) {
-  return <p className="text-xs text-neutral-400">{children}</p>;
+  return <p className="text-sm text-neutral-400">{children}</p>;
 }
 
-function TimelineEventDescription({ label, children }) {
+function TimelineEventDescription({ label }) {
   return (
     <p>
-      <span className="text-neutral-300 block">{label}</span>
-      <span className="text-neutral-400 block mt-1 text-sm">{children}</span>
+      <span className="text-neutral-400 block">{label}</span>
     </p>
   );
 }

@@ -4,6 +4,7 @@ import Layout from "components/home/layout";
 import Section from "components/home/section";
 import ExternalImage from "components/home/external-image";
 import { Timeline, TimelineEvent } from "components/home/timeline";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -28,12 +29,12 @@ export default function HomePage() {
           <Timeline>
             <TimelineEvent active>
               <TimelineEvent.Title>2022 — Currently</TimelineEvent.Title>
-              <TimelineEvent.Description label="Software Engineer at Box" />
+              <TimelineEvent.Description label={<span>Software Engineer at <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://box.com" target="_blank">Box</Link></span>} />
             </TimelineEvent>
 
             <TimelineEvent last>
               <TimelineEvent.Title>2019 — 2022</TimelineEvent.Title>
-              <TimelineEvent.Description label="Software Engineer at Skryv – Acquired by Vanden Broele in 2021" />
+              <TimelineEvent.Description label={<span>Software Engineer at <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://skryv.com" target="_blank">Skryv</Link> – Acquired by <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://vandenbroele.com" target="_blank">Vanden Broele</Link> in 2021</span>} />
             </TimelineEvent>
           </Timeline>
         </Section>

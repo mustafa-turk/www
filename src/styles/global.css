@@ -47,3 +47,25 @@ body {
   font-weight: 400;
   src: local(""), url("/src/assets/GeistMono-Regular.ttf") format("ttf");
 }
+
+.shine-text {
+  font-size: inherit;
+  color: transparent;
+  background-clip: text !important;
+  animation: shine 1.5s linear infinite;
+  display: inline-block;
+  background: radial-gradient(circle at center,rgb(24 24 27 / 85%),transparent) -200% 50% / 200% 100% no-repeat,#f4f4f5;
+}
+
+.dark .shine-text {
+  display: inline-block;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0%;
+    }
+    100% {
+        background-position: -200% 0%;
+    }
+}

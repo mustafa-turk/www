@@ -5,6 +5,7 @@ import Section from "components/home/section";
 import ExternalImage from "components/home/external-image";
 import { Timeline, TimelineEvent } from "components/home/timeline";
 import Link from "next/link";
+import ShinyText from "components/common/shiny-text";
 
 export default function HomePage() {
   return (
@@ -17,7 +18,7 @@ export default function HomePage() {
         <Section index={1}>
           <Section.Heading hidden>About me</Section.Heading>
           <Section.Body>
-            Based in Netherlands, I’m a frontend-focused Software Engineer based with 6+ years of experience building high quality web applications.
+            Based in Netherlands, I’m a frontend-focused Software Engineer with 6+ years of experience building high quality web applications.
             <br />
             <br />
             I’ve previously worked at fast-moving startups and large, product-driven tech companies where working with globally distributed teams, engineering at scale, and building reliable software and accessible interfaces all come together.
@@ -29,12 +30,12 @@ export default function HomePage() {
           <Timeline>
             <TimelineEvent active>
               <TimelineEvent.Title>2022 — Currently</TimelineEvent.Title>
-              <TimelineEvent.Description label={<span>Software Engineer at <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://box.com" target="_blank">Box</Link></span>} />
+              <TimelineEvent.Description label={<span>Software Engineer at <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://box.com" target="_blank"><ShinyText>Box</ShinyText></Link></span>} />
             </TimelineEvent>
 
             <TimelineEvent last>
               <TimelineEvent.Title>2019 — 2022</TimelineEvent.Title>
-              <TimelineEvent.Description label={<span>Software Engineer at <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://skryv.com" target="_blank">Skryv</Link> – Acquired by <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://vandenbroele.com" target="_blank">Vanden Broele</Link> in 2021</span>} />
+              <TimelineEvent.Description label={<span>Software Engineer at <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://skryv.com" target="_blank"><ShinyText>Skryv</ShinyText></Link> – Acquired by <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://vandenbroele.com" target="_blank"><ShinyText>Vanden Broele</ShinyText></Link> in 2021</span>} />
             </TimelineEvent>
           </Timeline>
         </Section>

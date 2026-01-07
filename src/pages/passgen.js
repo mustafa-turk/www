@@ -1,5 +1,12 @@
-import { redirect } from 'next/navigation';
-
 export default function Passgen() {
-  redirect('https://secret.mustafaturk.me')
+  return null;
+}
+
+export async function getServerSideProps() {
+  return {
+    redirect: {
+      destination: 'https://secret.mustafaturk.me',
+      permanent: false,
+    },
+  };
 }

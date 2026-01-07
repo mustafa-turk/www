@@ -30,12 +30,12 @@ export default function HomePage() {
           <Timeline>
             <TimelineEvent active>
               <TimelineEvent.Title>2022 — Currently</TimelineEvent.Title>
-              <TimelineEvent.Description label={<span>Software Engineer at <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://box.com" target="_blank"><ShinyText>Box</ShinyText></Link></span>} />
+              <TimelineEvent.Description label={<span>Software Engineer at <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://box.com" target="_blank">Box</Link></span>} />
             </TimelineEvent>
 
             <TimelineEvent last>
               <TimelineEvent.Title>2019 — 2022</TimelineEvent.Title>
-              <TimelineEvent.Description label={<span>Software Engineer at <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://skryv.com" target="_blank"><ShinyText>Skryv</ShinyText></Link> – Acquired by <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://vandenbroele.com" target="_blank"><ShinyText>Vanden Broele</ShinyText></Link> in 2021</span>} />
+              <TimelineEvent.Description label={<span>Software Engineer at <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://skryv.com" target="_blank">Skryv</Link> – Acquired by <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://vandenbroele.com" target="_blank">Vanden Broele</Link> in 2021</span>} />
             </TimelineEvent>
           </Timeline>
         </Section>

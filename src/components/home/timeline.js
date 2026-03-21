@@ -7,7 +7,7 @@ function Timeline({ children }) {
 function TimelineEvent({ active, children, last }) {
   return (
     <div
-      className={classNames("flex justify-start gap-6 border-neutral-800", {
+      className={classNames("flex justify-start gap-6 border-neutral-200", {
         "border-l": !last,
         "pb-10": !last,
       })}
@@ -15,19 +15,19 @@ function TimelineEvent({ active, children, last }) {
       <div className="relative">
         <div
           className={classNames(
-            "absolute top-[-2px] left-[-8.5px] w-4 h-4 rounded-full aspect-square outline-black",
+            "absolute top-[0px] left-[-6.5px] w-3 h-3 rounded-full aspect-square",
             {
-              "bg-neutral-400": active,
-              "bg-neutral-800": !active,
-              "w-3 h-3": !active,
-              "left-[-5.5px]": !active,
+              "bg-neutral-900": active,
+              "bg-neutral-300": !active,
+              "w-2 h-2": !active,
+              "left-[-3.5px]": !active,
             }
           )}
         >
           {active && (
             <div
               className={classNames(
-                "absolute top-0 left-0 rounded-full -z-10 w-4 h-4 bg-neutral-200 animate-ping aspect-square"
+                "absolute top-0 left-0 rounded-full -z-10 w-4 h-4 bg-neutral-400 animate-ping aspect-square"
               )}
             />
           )}
@@ -39,13 +39,13 @@ function TimelineEvent({ active, children, last }) {
 }
 
 function TimelineEventTitle({ children }) {
-  return <p className="text-sm text-neutral-400">{children}</p>;
+  return <p className="text-sm text-neutral-600">{children}</p>;
 }
 
 function TimelineEventDescription({ label }) {
   return (
     <p>
-      <span className="text-neutral-400 block">{label}</span>
+      <span className="text-neutral-700 block">{label}</span>
     </p>
   );
 }

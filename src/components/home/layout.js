@@ -6,12 +6,12 @@ export default function Layout({ children }) {
     <div className='flex flex-col gap-12 max-w-2xl p-5 mx-auto mt-6 overflow-hidden'>
       <Header />
       {children}
-      <footer className='flex justify-between text-center text-neutral-500 text-sm mb-10'>
+      <footer className='flex justify-between text-center text-neutral-600 text-sm mb-10'>
         <div className="flex justify-center items-center gap-8 flex-row">
-            <Link href="https://github.com/mustafa-turk" target="_blank" className="hover:text-neutral-300 transition-all">
+            <Link href="https://github.com/mustafa-turk" target="_blank" className="hover:text-neutral-900 transition-all">
               Github
             </Link>
-            <Link href="https://www.linkedin.com/in/mustafa-tk/" target="_blank" className="hover:text-neutral-300 transition-all">
+            <Link href="https://www.linkedin.com/in/mustafa-tk/" target="_blank" className="hover:text-neutral-900 transition-all">
               LinkedIn
             </Link>
         </div>

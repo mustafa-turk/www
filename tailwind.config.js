@@ -18,7 +18,6 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Untitled Sans", ...defaultTheme.fontFamily.sans],
-        mono: ["Geist Mono", ...defaultTheme.fontFamily.mono],
       },
     },
   },

@@ -1,7 +1,7 @@
 function Link({ href, children, inline, ...props }) {
   return (
     <a
-      className={`${inline ? "inline" : "block"} text-neutral-200 relative`}
+      className={`${inline ? "inline" : "block"} text-neutral-900 relative`}
       href={href}
       rel='noreferrer'
       {...props}

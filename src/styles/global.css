@@ -7,8 +7,8 @@
 }
 
 html {
-  @apply text-neutral-300;
-  @apply bg-black;
+  @apply text-neutral-900;
+  @apply bg-white;
 }
 
 @keyframes fade {
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background: #000;
+  background: #fff;
   animation: fade 0.5s linear;
   animation-fill-mode: both;
 }
@@ -41,12 +41,6 @@ body {
   src: local(""), url("/src/assets/UntitledSans-Medium.woff") format("woff");
 }
 
-@font-face {
-  font-family: "Geist Mono";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("/src/assets/GeistMono-Regular.ttf") format("ttf");
-}
 
 .shine-text {
   font-size: inherit;
@@ -54,11 +48,7 @@ body {
   background-clip: text !important;
   animation: shine 1.5s linear infinite;
   display: inline-block;
-  background: radial-gradient(circle at center,rgb(24 24 27 / 85%),transparent) -200% 50% / 200% 100% no-repeat,#f4f4f5;
-}
-
-.dark .shine-text {
-  display: inline-block;
+  background: radial-gradient(circle at center,rgb(212 212 212 / 85%),transparent) -200% 50% / 200% 100% no-repeat,#171717;
 }
 
 @keyframes shine {

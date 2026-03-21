@@ -3,9 +3,7 @@ import Head from "next/head";
 import Layout from "components/home/layout";
 import Section from "components/home/section";
 import ExternalImage from "components/home/external-image";
-import { Timeline, TimelineEvent } from "components/home/timeline";
 import Link from "next/link";
-import ShinyText from "components/common/shiny-text";
 
 export default function HomePage() {
   return (
@@ -18,29 +16,16 @@ export default function HomePage() {
         <Section index={1}>
           <Section.Heading hidden>About me</Section.Heading>
           <Section.Body>
-            Based in Netherlands, I’m a frontend-focused Software Engineer with 6+ years of experience building high quality web applications.
-            <br />
-            <br />
-            I’ve previously worked at fast-moving startups and large, product-driven tech companies where working with globally distributed teams, engineering at scale, and building reliable software and accessible interfaces all come together.
+            <p>
+              Based in Netherlands, I’m a frontend-focused Software Engineer with 7+ years of experience building high quality web applications.
+            </p>
+            <p>
+              I’ve previously worked at fast-moving startups and large, product-driven tech companies where working with globally distributed teams, engineering at scale, and building reliable software and accessible interfaces all come together. I’m currently working @ <Link className="text-neutral-900 underline underline-offset-2 font-medium" href="https://box.com" target="_blank">Box</Link>.
+            </p>
           </Section.Body>
         </Section>
 
         <Section index={2}>
-          <Section.Heading hidden>Timeline</Section.Heading>
-          <Timeline>
-            <TimelineEvent active>
-              <TimelineEvent.Title>2022 — Currently</TimelineEvent.Title>
-              <TimelineEvent.Description label={<span>Software Engineer at <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://box.com" target="_blank">Box</Link></span>} />
-            </TimelineEvent>
-
-            <TimelineEvent last>
-              <TimelineEvent.Title>2019 — 2022</TimelineEvent.Title>
-              <TimelineEvent.Description label={<span>Software Engineer at <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://skryv.com" target="_blank">Skryv</Link> – Acquired by <Link className="text-neutral-300 hover:text-neutral-300 transition-all" href="https://vandenbroele.com" target="_blank">Vanden Broele</Link> in 2021</span>} />
-            </TimelineEvent>
-          </Timeline>
-        </Section>
-
-        <Section index={4}>
           <Section.Body>
             <ExternalImage
               appUrl="https://secret.mustafaturk.me"
@@ -58,7 +43,7 @@ export default function HomePage() {
             />
             <ExternalImage
               appUrl="https://fontara.xyz"
-              imgSrc="/bio.webp"
+              imgSrc="/fontara.webp"
               title="Fontara"
               description="Create your social media bio with unique fonts"
             />

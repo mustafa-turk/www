@@ -17,10 +17,10 @@ export default function HomePage() {
           <Section.Heading hidden>About me</Section.Heading>
           <Section.Body>
             <p>
-              Based in Netherlands, I’m a frontend-focused Software Engineer with 7+ years of experience building high quality web applications.
+              I’m a frontend-focused Software Engineer with 7+ years of experience building high quality web applications, based in the Netherlands.
             </p>
             <p>
-              I’ve previously worked at fast-moving startups and large, product-driven tech companies where working with globally distributed teams, engineering at scale, and building reliable software and accessible interfaces all come together. I’m currently working @ <Link className="text-neutral-900 underline underline-offset-2 font-medium" href="https://box.com" target="_blank">Box</Link>.
+              I’ve previously worked at fast-moving startups and currently working @ <Link className="text-neutral-900 underline underline-offset-2 font-medium" href="https://box.com" target="_blank">Box</Link>, a large, product-driven tech company where working with globally distributed teams, engineering at scale, and building reliable software and accessible interfaces all come together.
             </p>
           </Section.Body>
         </Section>

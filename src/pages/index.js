@@ -41,12 +41,6 @@ export default function HomePage() {
               title="Calendar"
               description="A simple, minimalistic and clutter-free iOS calendar app"
             />
-            <ExternalImage
-              appUrl="https://fontara.xyz"
-              imgSrc="/fontara.webp"
-              title="Fontara"
-              description="Create your social media bio with unique fonts"
-            />
           </Section.Body>
         </Section>
       </main>

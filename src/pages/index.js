@@ -28,7 +28,7 @@ export default function HomePage() {
         <Section index={2}>
           <Section.Body>
             <ExternalImage
-              appUrl="https://secret.mustafaturk.me"
+              appUrl="https://secret.mustafaturk.com"
               imgSrc="/secret.webp"
               sourceUrl="https://github.com/mustafa-turk/secret"
               title="Pass"

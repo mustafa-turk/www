@@ -5,7 +5,7 @@ export default function Passgen() {
 export async function getServerSideProps() {
   return {
     redirect: {
-      destination: 'https://secret.mustafaturk.me',
+      destination: 'https://secret.mustafaturk.com',
       permanent: false,
     },
   };

@@ -17,10 +17,13 @@ export default function HomePage() {
           <Section.Heading hidden>About me</Section.Heading>
           <Section.Body>
             <p>
-              I’m a frontend-focused Software Engineer with 7+ years of experience building high quality web applications, based in the Netherlands.
+            Software Engineer with 7+ years of experience building web products, specializing in frontend engineering.
             </p>
             <p>
-              I’ve previously worked at fast-moving startups and currently working @ <Link className="text-neutral-900 underline underline-offset-2 font-medium" href="https://box.com" target="_blank">Box</Link>, a large, product-driven tech company where working with globally distributed teams, engineering at scale, and building reliable software and accessible interfaces all come together.
+            I began my career in startups, taking products from 0 → 1, owning architecture and development end-to-end, contributing to a successful acquisition, and playing a key role in integrating the acquired product into the acquiring company's platform.
+            </p>
+            <p>
+            Today, I bring that startup ownership mindset to enterprise software @ <Link className="text-neutral-900 underline underline-offset-2 font-medium" href="https://box.com" target="_blank">Box</Link>, where I lead complex engineering initiatives for products used by millions of users worldwide. I enjoy solving challenging technical problems, driving projects from idea to production, and building software that scales.
             </p>
           </Section.Body>
         </Section>
